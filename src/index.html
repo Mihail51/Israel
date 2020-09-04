@@ -7,12 +7,15 @@
 	<title>Israel</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	
 	<link rel="preload" href="fonts/firasans-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="fonts/firasans-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="fonts/firasans-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="fonts/raleway-extrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	
+
+	<script src="js/modernizr.custom.js"></script>
 </head>
 <body>
 
@@ -20,18 +23,20 @@
 		<ul class="content header__content conteiner">
 			<li class="phone-number"><a href="tel:+(972)2–621–6581" tabindex="1">+ (972) 2 – 621 – 6581</a></li>
 			<li class="logo">
-				<svg class="image logo__image" width="137" height="48">
-					<use xlink:href="sprite.svg#logo"></use>
-				</svg>
+				<a href="#">
+					<svg class="image logo__image" width="137" height="48">
+						<use xlink:href="sprite.svg#logo"></use>
+					</svg>
+				</a>
 			</li>
-			<li><button class="md-trigger" data-modal="modal-10">Заказать звонок</button></li>
+			<li class="bell_consent"><div class="md-trigger" data-modal="modal-10">Заказать звонок</div></li>
 			<li class="header-form">
-				<div class="md-modal md-effect-10" id="modal-10">
+				<div class="md-modal md-effect-10 md-show" id="modal-10">
 					<div class="md-content">
 						<form action="#" method="post" class="form form__bell">
 							<h3>Заказать звонок</h3>
 							<fieldset class="form__inner form__inner_top">
-								<legend>Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос! </legend>
+								<legend class="text text__legend">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос! </legend>
 								<label for="name" class="visually-hidden">Имя</label>
 								<input type="text" name="name" id="name" placeholder="Имя" required="required">
 								<label for="tel" class="visually-hidden">Телефон</label>
@@ -39,23 +44,31 @@
 							</fieldset>
 							<fieldset class="form__inner form__inner_bottom">
 								<input type="submit" name="submit" value="перезвоните мне" class="btn form__bell_btn">
-								<input type="checkbox" name="checkbox" id="chek"  class="visually-hidden">
-								<label for="chek">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
+								<label for="chek" class="text form__bell_consent"><input type="checkbox" name="checkbox" id="chek"  class="visually-hidden"><span></span>Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
 							</fieldset>
 						</form>
 						<div class="md-close">
-							<svg class="image logo__image" width="18" height="17">
-							<use xlink:href="sprite.svg#close"></use>
-						</svg>
+							<img width="18" height="17" src="images/close.svg" alt="Закрыть">
+<!--							<svg class="image image__logo" width="18" height="17">
+								<use xlink:href="sprite.svg#close"></use>    
+							</svg>   -->
 						</div>
 					</div>
-				</div>	
+				</div>
 			</li>
 		</ul>
 	</header>
 
 
-	
+
+	<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = 'js/';
+		</script>
+	<script src="js/classie.js"></script>
+	<script src="js/css-filters-polyfill.js"></script>
+	<script src="js/cssParser.js"></script>
+	<script src="js/modalEffects.js"></script>
 
 </body>
 </html>

@@ -52,7 +52,8 @@
   margin: -1px;
 }
 .conteiner {
-    width: 1170px;
+    width: 85.65%;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -60,7 +61,31 @@ ul {
     list-style: none;
     
 }
+h2, h3 {
+    font-family: 'montserrat', "arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #1fc0fc;
+}
+h2 {
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 28px;
+    line-height: 34px;
+}
+.text {
+    font-family: 'fira-sans', "arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #484848;
+}
 
+
+/* HEADER */
 .header__basic {
     width: 100%;
     position: absolute;
@@ -73,15 +98,42 @@ ul {
     flex-wrap: wrap;
     align-items: center;
 }
+.phone-number a, .md-trigger {
+    font-family: 'fira-sans', "arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #484848;
+    text-decoration: none;
+}
+.md-trigger {
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+.md-trigger:hover, .md-trigger:focus {
+    margin-top: 1px;
+    border-bottom: 1px dashed #484848;
+    cursor: pointer;
+}
+.phone-number a:hover,
+.phone-number a:focus {
+    text-decoration: underline;
+}
+/* End of HEADER */
+
+/*Форма заказа звонка*/
 .header-form {
     position: absolute;
     top: 0;
     right: 0;
 }
 .md-effect-10 {
+    position: absolute;
     width: 480px;
-    height: 521px;
+    min-height: 521px;
     border-radius: 8px;
+    right: 0;
     background: #fff;
     box-shadow:  0px 3px 12px rgba(0, 0, 0, 0.1);
     border-top: .1px solid transparent;
@@ -90,10 +142,9 @@ ul {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    -webkit-perspective: 1300px;
+    -moz-perspective: 1300px;
+    perspective: 1300px;
 }
 .md-show {
     visibility: visible;
@@ -117,7 +168,12 @@ ul {
     width: 100%;
     height: 59px;
     margin: 4px 0;
-    border: 2px solid #E3E3E3;
+    font-family: 'fira-sans', "arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
     border-radius: 29.5px;
     box-sizing: border-box;
 }
@@ -128,6 +184,774 @@ ul {
 legend{
     margin: 0 0 32px;
 }
+.text__legend {
+    font-size: 15px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+.form__inner_top > input{
+    padding-left: 40px;
+    border: 2px solid #E3E3E3;
+    color: #484848;
+    opacity: 0.5;
+}
+.form__inner_top > input:hover, 
+.form__inner_top > input:focus {
+    border: 2px solid #FFC341;
+}
+.form__inner_top > input:active {
+    border: 2px solid #484848;
+}
 .form__bell_btn {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
     background: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%);
+    border: none;
+}
+.form__bell_btn:hover, .form__bell_btn:focus {
+    background: linear-gradient(109.15deg, #FFC341 -50.3%, #FFD701 63.1%);
+    cursor: pointer;
+}
+.form__bell_btn:active {
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(109.15deg, #FFC341 -50.3%, #FFD701 63.1%);
+}
+.form__bell_consent {
+    margin-top: 16px;
+/*    padding-left: 24px;   */
+    font-size: 13px;
+    line-height: 19px;
+    opacity: 0.74;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.form__bell_consent span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid #FFC341;
+    box-sizing: border-box;
+    align-self: start;
+    flex-shrink: 0;
+    order: -1;
+}
+.form__bell_consent:hover span, 
+.form__bell_consent input:focus+span {
+    background: #ffc341;
+
+}
+.form__bell_consent input:checked+span {
+    background: url(../images/angle-down.svg) no-repeat center center;
+}
+.md-effect-10 .md-close {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    position: absolute;
+    top: -24px;
+    right: 32px;
+}
+.md-effect-10 .md-close:hover, 
+.md-effect-10 .md-close:focus img, 
+.md-effect-10 .md-close:active {
+    display: inline-block;
+    border: 1px solid #ffc341;
+}
+.md-effect-10 .md-content {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(-60deg);
+    -moz-transform: rotateX(-60deg);
+    -ms-transform: rotateX(-60deg);
+    transform: rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.md-show.md-effect-10 .md-content {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+/* Конец формы заказа звонка */@font-face {
+    font-family: 'fira-sans';
+    src: url('../fonts/firasans-bold.woff2') format('woff2'),
+        url('../fonts/firasans-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fira-sans';
+    src: url('../fonts/firasans-medium.woff2') format('woff2'),
+        url('../fonts/firasans-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat-bold.woff2') format('woff2'),
+        url('../fonts/montserrat-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-extrabold.woff2') format('woff2'),
+        url('../fonts/raleway-extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fira-sans';
+    src: url('../fonts/firasans-regular.woff2') format('woff2'),
+        url('../fonts/firasans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.conteiner {
+    width: 85.65%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+ul {
+    list-style: none;
+    
+}
+h2, h3 {
+    font-family: 'montserrat', "arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #1fc0fc;
+}
+h2 {
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 28px;
+    line-height: 34px;
+}
+.text {
+    font-family: 'fira-sans', "arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #484848;
+}
+
+
+/* HEADER */
+.header__basic {
+    width: 100%;
+    position: absolute;
+    top: 32px;
+}
+.header__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.phone-number a, .md-trigger {
+    font-family: 'fira-sans', "arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #484848;
+    text-decoration: none;
+}
+.md-trigger {
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+.md-trigger:hover, .md-trigger:focus {
+    margin-top: 1px;
+    border-bottom: 1px dashed #484848;
+    cursor: pointer;
+}
+.phone-number a:hover,
+.phone-number a:focus {
+    text-decoration: underline;
+}
+/* End of HEADER */
+
+/*Форма заказа звонка*/
+.header-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.md-effect-10 {
+    position: absolute;
+    width: 480px;
+    min-height: 521px;
+    border-radius: 8px;
+    right: 0;
+    background: #fff;
+    box-shadow:  0px 3px 12px rgba(0, 0, 0, 0.1);
+    border-top: .1px solid transparent;
+    z-index: 2000;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1300px;
+    -moz-perspective: 1300px;
+    perspective: 1300px;
+}
+.md-show {
+    visibility: visible;
+}
+.form__bell {
+    margin-top: 56px;
+    margin-bottom: 40px;
+}
+.form__bell h3 {
+    margin-left: 42px;
+}
+.form__inner {
+    border: none;
+    padding: 0;
+}
+.form__inner_top {
+    width: 360px;
+    margin-left: 42px;
+}
+.form__inner input {
+    width: 100%;
+    height: 59px;
+    margin: 4px 0;
+    font-family: 'fira-sans', "arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+    border-radius: 29.5px;
+    box-sizing: border-box;
+}
+.form__inner_bottom {
+    width: 264px;
+    margin: 0 auto;
+}
+legend{
+    margin: 0 0 32px;
+}
+.text__legend {
+    font-size: 15px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+.form__inner_top > input{
+    padding-left: 40px;
+    border: 2px solid #E3E3E3;
+    color: #484848;
+    opacity: 0.5;
+}
+.form__inner_top > input:hover, 
+.form__inner_top > input:focus {
+    border: 2px solid #FFC341;
+}
+.form__inner_top > input:active {
+    border: 2px solid #484848;
+}
+.form__bell_btn {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    background: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%);
+    border: none;
+}
+.form__bell_btn:hover, .form__bell_btn:focus {
+    background: linear-gradient(109.15deg, #FFC341 -50.3%, #FFD701 63.1%);
+    cursor: pointer;
+}
+.form__bell_btn:active {
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(109.15deg, #FFC341 -50.3%, #FFD701 63.1%);
+}
+.form__bell_consent {
+    margin-top: 16px;
+/*    padding-left: 24px;   */
+    font-size: 13px;
+    line-height: 19px;
+    opacity: 0.74;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.form__bell_consent span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid #FFC341;
+    box-sizing: border-box;
+    align-self: start;
+    flex-shrink: 0;
+    order: -1;
+}
+.form__bell_consent:hover span, 
+.form__bell_consent input:focus+span {
+    background: #ffc341;
+
+}
+.form__bell_consent input:checked+span {
+    background: url(../images/angle-down.svg) no-repeat center center;
+}
+.md-effect-10 .md-close {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    position: absolute;
+    top: -24px;
+    right: 32px;
+}
+.md-effect-10 .md-close:hover, 
+.md-effect-10 .md-close:focus img, 
+.md-effect-10 .md-close:active {
+    display: inline-block;
+    border: 1px solid #ffc341;
+}
+.md-effect-10 .md-content {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(-60deg);
+    -moz-transform: rotateX(-60deg);
+    -ms-transform: rotateX(-60deg);
+    transform: rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.md-show.md-effect-10 .md-content {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+/* Конец формы заказа звонка */
+
+
+
+@media (max-width: 767px) {
+    .logo {
+        flex-basis: 130px;
+        text-align: left;
+        order: -1;
+        flex-shrink: 0;
+    }
+    .logo__image {
+        width: 120px;
+    }
+    .phone-number, .bell_consent {
+        flex-basis: 130px;
+        text-align: right;
+        flex-shrink: 0;
+        margin-left: auto;
+    }
+    .phone-number a, .md-trigger {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .md-effect-10 {
+        width: 290px;
+    }
+    .form__inner_top {
+        width: 75%;
+        margin-left: 8.75%;
+    }
+    .form__inner_bottom {
+        width: 60%;
+    }
+    .form__bell h3 {
+        margin-left: 8.75%;
+    }
+}
+
+
+@font-face {
+    font-family: 'fira-sans';
+    src: url('../fonts/firasans-bold.woff2') format('woff2'),
+        url('../fonts/firasans-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fira-sans';
+    src: url('../fonts/firasans-medium.woff2') format('woff2'),
+        url('../fonts/firasans-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat-bold.woff2') format('woff2'),
+        url('../fonts/montserrat-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-extrabold.woff2') format('woff2'),
+        url('../fonts/raleway-extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fira-sans';
+    src: url('../fonts/firasans-regular.woff2') format('woff2'),
+        url('../fonts/firasans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.conteiner {
+    width: 85.65%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+ul {
+    list-style: none;
+    
+}
+h2, h3 {
+    font-family: 'montserrat', "arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #1fc0fc;
+}
+h2 {
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 28px;
+    line-height: 34px;
+}
+.text {
+    font-family: 'fira-sans', "arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #484848;
+}
+
+
+/* HEADER */
+.header__basic {
+    width: 100%;
+    position: absolute;
+    top: 32px;
+}
+.header__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.phone-number a, .md-trigger {
+    font-family: 'fira-sans', "arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #484848;
+    text-decoration: none;
+}
+.md-trigger {
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+.md-trigger:hover, .md-trigger:focus {
+    margin-top: 1px;
+    border-bottom: 1px dashed #484848;
+    cursor: pointer;
+}
+.phone-number a:hover,
+.phone-number a:focus {
+    text-decoration: underline;
+}
+/* End of HEADER */
+
+/*Форма заказа звонка*/
+.header-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.md-effect-10 {
+    position: absolute;
+    width: 480px;
+    min-height: 521px;
+    border-radius: 8px;
+    right: 0;
+    background: #fff;
+    box-shadow:  0px 3px 12px rgba(0, 0, 0, 0.1);
+    border-top: .1px solid transparent;
+    z-index: 2000;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1300px;
+    -moz-perspective: 1300px;
+    perspective: 1300px;
+}
+.md-show {
+    visibility: visible;
+}
+.form__bell {
+    margin-top: 56px;
+    margin-bottom: 40px;
+}
+.form__bell h3 {
+    margin-left: 42px;
+}
+.form__inner {
+    border: none;
+    padding: 0;
+}
+.form__inner_top {
+    width: 360px;
+    margin-left: 42px;
+}
+.form__inner input {
+    width: 100%;
+    height: 59px;
+    margin: 4px 0;
+    font-family: 'fira-sans', "arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+    border-radius: 29.5px;
+    box-sizing: border-box;
+}
+.form__inner_bottom {
+    width: 264px;
+    margin: 0 auto;
+}
+legend{
+    margin: 0 0 32px;
+}
+.text__legend {
+    font-size: 15px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+.form__inner_top > input{
+    padding-left: 40px;
+    border: 2px solid #E3E3E3;
+    color: #484848;
+    opacity: 0.5;
+}
+.form__inner_top > input:hover, 
+.form__inner_top > input:focus {
+    border: 2px solid #FFC341;
+}
+.form__inner_top > input:active {
+    border: 2px solid #484848;
+}
+.form__bell_btn {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    background: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%);
+    border: none;
+}
+.form__bell_btn:hover, .form__bell_btn:focus {
+    background: linear-gradient(109.15deg, #FFC341 -50.3%, #FFD701 63.1%);
+    cursor: pointer;
+}
+.form__bell_btn:active {
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(109.15deg, #FFC341 -50.3%, #FFD701 63.1%);
+}
+.form__bell_consent {
+    margin-top: 16px;
+/*    padding-left: 24px;   */
+    font-size: 13px;
+    line-height: 19px;
+    opacity: 0.74;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.form__bell_consent span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid #FFC341;
+    box-sizing: border-box;
+    align-self: start;
+    flex-shrink: 0;
+    order: -1;
+}
+.form__bell_consent:hover span, 
+.form__bell_consent input:focus+span {
+    background: #ffc341;
+
+}
+.form__bell_consent input:checked+span {
+    background: url(../images/angle-down.svg) no-repeat center center;
+}
+.md-effect-10 .md-close {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    position: absolute;
+    top: -24px;
+    right: 32px;
+}
+.md-effect-10 .md-close:hover, 
+.md-effect-10 .md-close:focus img, 
+.md-effect-10 .md-close:active {
+    display: inline-block;
+    border: 1px solid #ffc341;
+}
+.md-effect-10 .md-content {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(-60deg);
+    -moz-transform: rotateX(-60deg);
+    -ms-transform: rotateX(-60deg);
+    transform: rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.md-show.md-effect-10 .md-content {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+/* Конец формы заказа звонка */
+
+
+
+@media (max-width: 767px) {
+    .logo {
+        flex-basis: 130px;
+        text-align: left;
+        order: -1;
+        flex-shrink: 0;
+    }
+    .logo__image {
+        width: 120px;
+    }
+    .phone-number, .bell_consent {
+        flex-basis: 130px;
+        text-align: right;
+        flex-shrink: 0;
+        margin-left: auto;
+    }
+    .phone-number a, .md-trigger {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .md-effect-10 {
+        width: 290px;
+    }
+    .form__inner_top {
+        width: 75%;
+        margin-left: 8.75%;
+    }
+    .form__inner_bottom {
+        width: 60%;
+    }
+    .form__bell h3 {
+        margin-left: 8.75%;
+    }
+}
+@media (max-width: 767px) {
+    .logo {
+        flex-basis: 130px;
+        text-align: left;
+        order: -1;
+        flex-shrink: 0;
+    }
+    .logo__image {
+        width: 120px;
+    }
+    .phone-number, .bell_consent {
+        flex-basis: 130px;
+        text-align: right;
+        flex-shrink: 0;
+        margin-left: auto;
+    }
+    .phone-number a, .md-trigger {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
