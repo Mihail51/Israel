@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Israel</title>
 	<link rel="stylesheet" href="css/normalize.css">
@@ -14,17 +15,47 @@
 	
 </head>
 <body>
+
+	<header class="header header__basic">
+		<ul class="content header__content conteiner">
+			<li class="phone-number"><a href="tel:+(972)2–621–6581" tabindex="1">+ (972) 2 – 621 – 6581</a></li>
+			<li class="logo">
+				<svg class="image logo__image" width="137" height="48">
+					<use xlink:href="sprite.svg#logo"></use>
+				</svg>
+			</li>
+			<li><button class="md-trigger" data-modal="modal-10">Заказать звонок</button></li>
+			<li class="header-form">
+				<div class="md-modal md-effect-10" id="modal-10">
+					<div class="md-content">
+						<form action="#" method="post" class="form form__bell">
+							<h3>Заказать звонок</h3>
+							<fieldset class="form__inner form__inner_top">
+								<legend>Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос! </legend>
+								<label for="name" class="visually-hidden">Имя</label>
+								<input type="text" name="name" id="name" placeholder="Имя" required="required">
+								<label for="tel" class="visually-hidden">Телефон</label>
+								<input type="tel" name="tel" id="tel" pattern="(\+?\d[- .]*){7,13}" placeholder="Телефон" required="required">
+							</fieldset>
+							<fieldset class="form__inner form__inner_bottom">
+								<input type="submit" name="submit" value="перезвоните мне" class="btn form__bell_btn">
+								<input type="checkbox" name="checkbox" id="chek"  class="visually-hidden">
+								<label for="chek">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
+							</fieldset>
+						</form>
+						<div class="md-close">
+							<svg class="image logo__image" width="18" height="17">
+							<use xlink:href="sprite.svg#close"></use>
+						</svg>
+						</div>
+					</div>
+				</div>	
+			</li>
+		</ul>
+	</header>
+
+
 	
-<img src="images/how-to-go.png" alt="">
-<svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="28" height="33" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0" transform="scale(0.0357143 0.030303)"/>
-</pattern>
-<image id="image0" width="28" height="33" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAhCAYAAADK6cvnAAACgElEQVRIib2Wz0tUURTHP9lkxExZCCFiCA24UhCCVApLok0UFBHVImonrly1qo24FJEW7oVCc2VKmNHChhaCK/+CDESRFjX5g8rM2+J+X3N6zozvDb35wmHe+95zvt/zLve9M1AZRhRVQTfgFN3VMFwyhktJm92R0VeFE5cYVmVyTeHEJYJ+GawYbkVc//82qwE2gV2g3fDt4jaVcyBSQBa4B9SqOIxfQA+QAbaAK8B1rX1XZIBZ4D1wpITPDvASYJzCqUs6xlPAFHBfnbwGPgNpYA/YAO4CJ4GPeoJ0qPtt4DJwFsgDk8AJ/BZvA6fNjkwFRTl1MBASq5OpA1qKbFWAFuVsqMZiQGs5S7aax84afl7cWBmzAGPKnTdc1ui2hgsmtfBW9xd0vwvURzCsV65TLdJy0t6HRtNNDzCn68EIZgEGVTMnjUCvsVTBsBJ+6/cL/nWJilrVWI3hcgUZYNl09iiGWYCHpn5ZmmUxQuHEVYrgZB84M+uANdNhXwVmfaZ+jf2vyT8YVeIPCk8ZftHLIQ18C2mMlkpuNp2dB2Z0PRTDcEg1M9II9JqLJU+bZEIFDRHMGkINY5qeDief08Ie0GT4N+InIhhOKHfWcE3SdPL4iwWRT0Iix/EfZAe0lTFrU05eNRZPtbYAfk49ADq1eBE/ro6ps+AAoM5zFJ8Wl3TtgGf4k1mDn5WntNYpL55TvXn44hBwBrgJHKX4xP8JXAVu4Sf+Ywqfux38yczgZ9076YSRks6rImslkcdvc5fhusTl4whFRS9+W9YNty6uNwlDgE8yuK1w4hLDDZlsKZy4RLFI4dQtJm0G0GEMO+IWH67AcBX/Z/cD/h2OhT993f+vTKFcIwAAAABJRU5ErkJggg=="/>
-</defs>
-</svg>
 
 </body>
 </html>
