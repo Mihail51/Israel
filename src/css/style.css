@@ -97,6 +97,7 @@ h3 {
     width: 100%;
     position: absolute;
     top: 32px;
+    z-index: 1;
 }
 .header__content {
     position: relative;
@@ -320,6 +321,7 @@ legend{
 .content__presentation {
     width: 100%;
     position: relative;
+    border-top: .1px solid transparent;
 }
 .title__main {
     position: absolute;
@@ -331,8 +333,8 @@ legend{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../images/pic_overlay.jpg) no-repeat center center;
-}
+/*    background: url(../images/pic_overlay.jpg) no-repeat center center;  */
+}  /*
 .title__main h1 {
     font-family: 'raleway', "Apial", sans-serif;
     font-style: normal;
@@ -343,13 +345,13 @@ legend{
     text-transform: uppercase;
     background: #fff;
     mix-blend-mode: lighten;
-}
+}  */
 .girl {
     position: relative;
     width: 381px;
     height: 906px;
-    background: url(../images/girl.png) no-repeat center top;
-    margin: 160px auto 0;
+    background: url(../images/girl.png) no-repeat 52% top;
+    margin: 0 auto;
 }
 .girl p {
     position: absolute;
