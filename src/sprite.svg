@@ -113,7 +113,7 @@
 		<image id="image0" width="32" height="25" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAZCAYAAABQDyyRAAAB/klEQVRIidXWzYuNcRQH8M/cueNlBiXlpVh4WakJUUM2ouRtofgD2MuOslE2WEpWlrJTdmOhTIqFSWYWhKgpZSI0ygzm7boWv/M0j+ne5rnXnZFvnX7Pc37n+Z7T+Z1zfg/FsB4PMI6pOWQSA9hTkLsQHqHaoHzDilYFUAnSnQVsuzAW9nMGUI61G8fQVsNmae75cNj+qsNXQnuO5yre17F9gj44qPH0tkrOtOEpduEZnqOzTsStwrhU1PulgvUqotk3z47zWBk+qyVMhHKivn3LkfmqkI6givvYtADOl+Nm+ByDfn8WxhWsmwfHy3AWn3K+vjKTgY+5jUncwnHpvJrFEhzADXzO8Y9IrTzahkFsxxEswiVsy5F8x2MpU28whA8YlUZvFR1S96zBZmyURvHu0GUYxmU8xAtRA4NBcihneDQyMKJ2/1akdhrHTzN3RC3bKfTiVGQE1mZ72SQkjdAMvSFd2CuN4B5siOy0Y7HaeIl30lwZkO6RL7NsVuVfsgycqEM4GxfD/p5UrKtxLXR3C3JsVSMDRfEj1h24HkTdoas0StZMAH2Yls7x5Ky9OwsRwICUwp74vhr611KnzHsA8Dbkr1FqBcl/H0BHPA8voN+hWMtlaajAaek2bLYuimIaW/KK8/7dL9nt7OfxnHQXdGpimDSIkpSFflz4DWW406ArksvgAAAAAElFTkSuQmCC"/>
 		</defs>
 	</symbol>
-	<symbol id="scroll-down">
+	<symbol id="scroll-down" viewBox="0 0 76 132">
 		<path d="M38 76V131.5" stroke="white"/>
 		<rect x="29" y="25" width="17" height="26" fill="url(#pattern0)"/>
 		<circle cx="38" cy="38" r="26.5" stroke="white"/>
