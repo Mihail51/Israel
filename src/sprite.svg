@@ -126,7 +126,7 @@
 		</defs>
 	</symbol>
 	<symbol id="star">
-		<rect width="28" height="33" />
+		<rect width="28" height="33" fill="url(#pattern0)"/>
 		<defs>
 		<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 		<use xlink:href="#image0" transform="scale(0.0357143 0.030303)"/>
