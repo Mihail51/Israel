@@ -731,18 +731,90 @@ legend{
     font-size: 15px;
     line-height: 21px;
     opacity: 0.5;
-}  /*
-.text__how_bottom:before {
-    content: "|";
-    width: 0px;
-    height: 42px;
-    background: #FFC341;
-    margin-right: 16px;
-}  */
+}  
 .line__vertical{
     width: 100%;
     height: 42px;
     border-left: 4px solid #FFC341;
+}
+
+/* LIFE IN ISRAEL */
+.life__main {
+    display: block;
+    width: 100%;
+    min-height: 950px;
+    background: url(../images/watercolor_Bg_life.png) no-repeat center center, url(../images/watch.png) no-repeat right 75%;
+    border-top: .1px solid transparent;
+}
+.content__life {
+    width: 1152px;
+    min-height: 843px;
+    margin: 76px auto 64px;
+    text-align: center;
+    border-top: .1px solid transparent;
+}
+.text__life {
+    width: 720px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 29px;
+    opacity: 0.87;
+}
+.slides__life {
+    width: 100%;
+    height: 732px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    flex-flow: column wrap;
+}
+.foto__life {
+    position: relative;
+    margin: 5px;
+}
+.foto__life_1 {
+    margin-left: 0;
+}
+.foto__life_3 {
+    margin-left: -185px;
+    order: 4;
+}
+.foto__life_4 {
+    order: 3;
+}
+.foto__life_5 {
+    order: 5;
+}
+.description__life {
+    position: absolute;
+    bottom: 8px;
+    font-family: 'raleway', "Apial", sans-serif;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 35px;
+    color: #fff;
+    text-align: left;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+.foto__life_1 .description__life {
+    width: 320px;
+    left: 40px;
+}
+.foto__life_2 .description__life {
+    width: 120px;
+    left: 24px;
+}
+.foto__life_3 .description__life {
+    width: 320px;
+    left: 32px;
+}
+.foto__life_4 .description__life {
+    width: 360px;
+    left: 32px;
+}
+.foto__life_5 .description__life {
+    width: 120px;
+    left: 24px;
 }
 
 
