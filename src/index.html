@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 
@@ -84,7 +84,7 @@
 				<h2>О программе</h2>
 				<p class="text text__about">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более&nbsp;250 учебных программ (60 на русском) и возможность стажировки в Израиле.
 				В&nbsp;течение&nbsp;освоения программ предусмотрен грант от 4200 до 84001.</p>
-				<div class="photo__about">
+				<div class="photo photo__about">
 					<img src="images/photo.png" alt="Молодежь у костра" width="870" height="460">
 					<svg class="play-button">
 						<use xlink:href="sprite.svg#play-button"></use>
@@ -98,7 +98,7 @@
 			<div class="content content__programs inner">
 				<h2>программы</h2>
 				<div class="composition composition__programs">
-					<input type="radio" name="program" id="general" class="visually-hidden" checked="checkbox">
+					<input type="radio" name="program" id="general" class="visually-hidden" checked="checked">
 					<input type="radio" name="program" id="academic" class="visually-hidden">
 					<input type="radio" name="program" id="internships" class="visually-hidden">
 					<input type="radio" name="program" id="volunteering" class="visually-hidden">
@@ -128,9 +128,9 @@
 							</div>
 							<div class="description description__program description__program_3">
 								<h3>Стажировки</h3>
-								<p class="text text__program" class="text text__program">Провести семестр или год за рубежом, знакомясь с различными культурами
+								<p class="text text__program">Провести семестр или год за рубежом, знакомясь с различными культурами
 								и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования.</p>
-								<p class="text text__program" class="text text__program">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного
+								<p class="text text__program">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного
 								и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.</p>
 							</div>
 							<div class="description description__program description__program_4">
@@ -152,16 +152,16 @@
 				</div>
 			</div>
 		</section>
-		<!-- END OF PROGRAMS -->
+		<!-- END OF PROGRAMS -->	
 		<!-- WANT -->
 		<section class="want want__main">
 			<article class="content content__want inner">
 				<h2>Хочу поехать!</h2>
 				<p class="text text__want">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
-				<form action="" class="form__want">
-					<label for="tel" class="visually-hidden"></label>
-					<input type="tel" name="tel" id="tel" pattern="(\+?\d[- .]*){7,13}" placeholder="телефон" class="phone-nomber__want" required>
-					<input type="submit" value="перезвоните мне" class="btn__want">
+				<form action="#" method="post" class="form form__want">
+					<label for="tel-1" class="visually-hidden"></label>
+					<input type="tel" name="tel-1" id="tel-1" pattern="(\+?\d[- .]*){7,13}" placeholder="телефон" class="phone-nomber phone-nomber__want" required>
+					<input type="submit" value="перезвоните мне" class="btn btn__want">
 				</form>
 			</article>
 		</section>
@@ -175,13 +175,15 @@
 					<svg width="2" height="193" viewBox="0 0 2 193" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path opacity="0.2" d="M1 0.5V193" stroke="#484848" stroke-dasharray="4 4"/>
 					</svg>
-					<ul>Чтобы иметь возможность получить грант на обучение 
-						от&nbsp;4200&nbsp;до&nbsp;8400$, вы должны:
-						<li class="text item item__how item__how_1">Быть в возрасте от 16 до 30 лет</li>
-						<li class="text item item__how item__how_2">Иметь оконченное среднее образование</li>
-						<li class="text item item__how item__how_3">Иметь документально подтверждённые еврейские корни и 		пройти консульскую проверку</li>
-						<li class="text item item__how item__how_4">За последние 2 года быть не больше 3х месяцев
-							подряд непрерывно в Израиле.</li>
+					<ul>
+						<li class="heading heading__how">Чтобы иметь возможность получить грант на обучение от&nbsp;4200&nbsp;до&nbsp;8400$, вы должны:
+							<ul>
+								<li class="text item item__how item__how_1">Быть в возрасте от 16 до 30 лет</li>
+								<li class="text item item__how item__how_2">Иметь оконченное среднее образование</li>
+								<li class="text item item__how item__how_3">Иметь документально подтверждённые еврейские корни и 		пройти консульскую проверку</li>
+								<li class="text item item__how item__how_4">За последние 2 года быть не 	больше 3х месяцев подряд непрерывно в Израиле.</li>
+							</ul>
+						</li>
 					</ul>
 					<div class="line line__vertical">
 						<p class="text text__how_bottom">Если вы не подходите по этим правилам, вы всё равно можете
@@ -232,14 +234,14 @@
 		</section>
 		<!-- END OF LIFE IN ISRAEL -->
 		<!-- #MASAISRAEL -->
-		<cection class="masa masa__main">
+		<section class="masa masa__main">
 			<div class="inner">
 				<article class="content content__masa">														<h2>#masaisrael</h2>
 					<p class="text text__masa">Познакомьтесь с программой  от первого лица! Многие участники ведут блоги и фотодневники о&nbsp;жизни, учёбе и путешествиях в Израиле. </p>
-					<a href="#" class="btn btn__masa"><img width="19.2" height="19.2" src="images/instagram.svg" alt="Значёк инстаграм">смотреть фото</a>
+					<a href="#" class="btn btn__masa"><img width="19" height="19" src="images/instagram.svg" alt="Значёк инстаграм">смотреть фото</a>
 				</article>
 			</div>
-		</cection>
+		</section>
 		<!-- END OF #MASAISRAEL -->
 	</main>
 

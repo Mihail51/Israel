@@ -89,6 +89,7 @@
 }
 ul {
     list-style: none;
+    padding: 0;
     
 }
 h2, h3 {
@@ -746,7 +747,7 @@ legend{
     line-height: 26px;
     opacity: 0.87;
 }
-.content__how > ul {
+.heading__how {
     width: 480px;
     padding: 0;
     font-family: 'fira-sans', "arial", sans-serif;
