@@ -64,7 +64,11 @@
     font-display: swap;
 }
 
-
+body {
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -75,6 +79,7 @@
 .conteiner {
     width: 85.65%;
     max-width: 1170px;
+    min-width: 303px;
     margin: 0 auto;
     padding: 0 17px 0 12px;
     -webkit-box-sizing: border-box;
@@ -154,8 +159,8 @@ h3 {
     letter-spacing: -.8px;
 }
 .md-trigger:hover, .md-trigger:focus {
-    margin-top: 1px;
     border-bottom: 1px dashed #484848;
+    margin-bottom: -1px;
     cursor: pointer;
 }
 .phone-number a:hover,
@@ -343,7 +348,12 @@ h3 {
 /* PRESENTATION */
 .presentation__main {
     width: 100%;
-    height: 906px;
+    min-width: 912px;
+    height: 66.33vw;
+    max-height: 906px;
+    min-height: 616.88px;
+    margin-left: 50%;
+    transform: translateX(-50%);
     background: url(../images/bg.png) no-repeat top center;
     background-size: 100% 97%;
     border-top: .1px solid transparent;
@@ -355,9 +365,10 @@ h3 {
 }
 .title__main {
     position: absolute;
-    width: 87%;
+    width: 87vw;
     max-width: 1018px;
-     left: 50%;
+    min-width: 347px;
+    left: 50%;
     top: 160px;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -379,16 +390,21 @@ h3 {
 } 
 .girl {
     position: relative;
-    width: 381px;
-    height: 906px;
-    background: url(../images/girl.png) no-repeat 52% top;
-    margin: 0 auto;
-    transform: translateX(20px);
+    width: 120%;
+    height: 77.44vw;
+    max-height: 906px;
+    min-height: 604.88px;
+    background: url(../images/girl.png) no-repeat 100% bottom;
+    background-size: 100% 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 .girl p {
     position: absolute;
-    top: 513px;
-    right: 37px;
+    width: 343px;
+    top: 56.6%;
+    right: 50%;
+    transform: translateX(50%);
     font-family: 'fira-sans', "arial", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -402,8 +418,8 @@ h3 {
     position: absolute;
     width: 76px;
     height: 132px;
-    top: 627px;
-    left: 46%;
+    top: 69.2%;
+    left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -1572,6 +1588,12 @@ h3 {
     .conteiner {
         padding-right: 0;
     }
+
+    /* HEADER */
+    .header__basic {
+        top: 20px;
+        height: 42px;
+    }
     .logo {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
@@ -1581,9 +1603,11 @@ h3 {
                 order: -1;
         -ms-flex-negative: 0;
             flex-shrink: 0;
+            margin-left: -7px;
     }
-    .logo__image {
-        width: 120px;   
+    .logo img {
+        width: 87%;
+        height: 42px;   
     }
     .phone-number, .bell_consent {
         position: absolute;
@@ -1602,7 +1626,7 @@ h3 {
     }
     .phone-number a, .md-trigger {
         font-size: 14px;
-        line-height: 17px;
+        line-height: 16.8px;
     }
     .md-effect-10 {
         width: 290px;
@@ -1616,5 +1640,29 @@ h3 {
     }
     .form__bell h3 {
         margin-left: 8.75%;
+    }
+
+    /* PRESENTATION */
+    .presentation__main {
+        margin-top: 20px;
+    }
+    .title__main {
+        top: 148px;
+    }
+    .girl {
+        width: 100%;
+        margin-left: 49%;
+        margin-top: 14px;
+    }
+    .girl p {
+        width: 288px;
+        top: 276px;
+        padding-left: 7px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .scroll-down {
+        top: 62.5%;
+        left: 50.5%;
     }
 }
