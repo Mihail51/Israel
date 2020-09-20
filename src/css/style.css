@@ -551,6 +551,7 @@ h3 {
 .description__program {
     width: 560px;
     opacity: 0;
+    transition: all .5s;
 }
 .description__program > h3 {
     margin-top: 18px;
@@ -1614,6 +1615,10 @@ h3 {
         font-size: 32px;
         line-height: 39px;
     }
+    h3 {
+        font-size: 24px;
+        line-height: 29px;
+    }
     .text {
         font-size: 16px;
         line-height: 26px;
@@ -1720,5 +1725,127 @@ h3 {
     }
     .text__about span {
         display: none;
+    }
+
+    /* PROGRAMS */
+
+    .programs__main {
+        background-position: 100% 54%;
+        background-size: 85%;
+    }
+    .content__programs {
+        margin-top: 77px;
+        text-align: center;
+    }
+    .composition__programs {
+        width: 100%;
+        margin-top: -11px;
+        flex-direction: column;
+    }
+    .selector__programs {
+        width: 905px;
+        flex-direction: row;
+        transition: all .5s;
+    }
+    .text__label {
+        width: 150px;
+        height: 48px;
+        border-radius: 24px;
+    }
+    .text__label_1::before {
+        margin-right: 15px;
+    }
+    .text__label_2::before {
+        margin-left: 10px;
+        margin-right: -11px;
+    }
+    .text__label_3::before {
+        margin-left: 14px;
+        margin-right: -11px;
+    }
+    .text__label_4::before {
+        margin-left: 12px;
+        margin-right: -5px;
+    }
+    .text__label:hover {
+        color: #FFC341;
+    }
+    .text__label:last-child {
+        margin-right: auto;
+    }
+    .wrap__programs {
+        width: 100%;
+        min-width: 288px;
+        margin-left: -15px;
+        margin-top: 14px;
+        text-align: left;
+    }
+    .descriptions__programs {
+        width: 100%;
+    }
+    .description__program {
+        width: 100%;
+        opacity: 0;
+        display: none;
+        transition: opacity .5s;
+    }
+    .description__program > h3 {
+        margin-bottom: 16px;
+    }
+    .description__program .text__program {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    #general:checked ~ .wrap__programs .descriptions__programs, 
+    #academic:checked ~ .wrap__programs .descriptions__programs, 
+    #internships:checked ~ .wrap__programs .descriptions__programs, 
+    #volunteering:checked ~ .wrap__programs .descriptions__programs, 
+    #religious:checked ~ .wrap__programs .descriptions__programs {
+        margin-left: 0;
+    }
+    #general:checked ~ .wrap__programs .descriptions__programs .description__program_1 {
+        display: block;
+    }
+    #general:checked ~ .selector__programs {
+        margin-left: 48px;
+    }
+    #general:checked ~ .selector__programs .text__label_1 {
+        width:180px;
+    }
+    #academic:checked ~ .wrap__programs .descriptions__programs .description__program_2 {
+         display: block;
+    }
+    #academic:checked ~ .selector__programs {
+         margin-left: -110px;
+    }
+    #academic:checked ~ .selector__programs .text__label_2 {
+         width:180px;
+    }
+    #internships:checked ~ .wrap__programs .descriptions__programs .description__program_3 {
+        display: block;
+    }
+    #internships:checked ~ .selector__programs {
+        margin-left: -262px;
+    }
+    #internships:checked ~ .selector__programs .text__label_3 {
+        width:180px;
+    }
+    #volunteering:checked ~ .wrap__programs .descriptions__programs .description__program_4 {
+        display: block;
+    }
+    #volunteering:checked ~ .selector__programs {
+        margin-left: -411px;
+    }
+    #volunteering:checked ~ .selector__programs .text__label_4 {
+        width:180px;
+    }
+    #religious:checked ~ .wrap__programs .descriptions__programs .description__program_5 {
+        display: block;
+    }
+    #religious:checked ~ .selector__programs {
+        margin-left: -560px;
+    }
+    #religious:checked ~ .selector__programs .text__label_5 {
+        width:180px;
     }
 }
