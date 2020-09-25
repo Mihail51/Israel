@@ -1016,6 +1016,9 @@ h3 {
     max-width: 120px;
     left: 11.21%;
 }
+.controls__life, .foto__life_phone {
+    display: none;
+}
 
 
 /* #MASAISRAEL */
@@ -1967,10 +1970,109 @@ h3 {
     }
 
 
-    .masa__main {
-        background-position: 20% 50%;
-        background-size: 170% auto;
+    /* LIFE IN ISRAEL */
+
+
+    .life__main {
+        background: none;
+        margin-top: 94px;
     }
+    .foto__life_desctop {
+        display: none;
+    }
+    .foto__life_phone {
+        display: initial;
+    }
+    .text__life {
+        width: 100%;
+        margin-left: 4px;
+        text-align: left;
+    }
+    .text__life span {
+        display: none;
+    }
+    .slider__life {
+        width: 288px;
+        margin: 33px auto 0;
+        overflow: hidden;
+    }
+    .slides__life {
+        flex-flow: row nowrap;
+        width: 1590px;
+        height: auto;
+        transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    }
+    .foto__life {
+        width: 288px;
+        max-width: none;
+        height: 400px;
+        margin: 0 5px;
+        order: initial;
+    }
+    .foto__life:first-child {
+        margin-left: 0;
+    }
+    .foto__life:last-child {
+        margin-right: auto;
+    }
+    .foto__life .description__life {
+        width: 256px;
+        max-width: none;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-49%);
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    }
+    .controls__life {
+        width: 64px;
+        height: 8px;
+        margin: 16px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .control__life {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        border: none;
+        background: #484848;
+        opacity: 0.2;
+    }
+    .control__life:focus, .control__life:active, .control__life:hover {
+        width: 8px;
+        height: 8px;
+        margin: 0 -1px;
+        background: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%);
+        opacity: 1;
+    }
+    #slide-life-1:checked ~ .slides__life {
+        margin-left: 0;
+    }
+    #slide-life-2:checked ~ .slides__life {
+        margin-left: -298px;
+    }
+    #slide-life-3:checked ~ .slides__life {
+        margin-left: -596px;
+    }
+    #slide-life-4:checked ~ .slides__life {
+        margin-left: -894px;
+    }
+    #slide-life-5:checked ~ .slides__life {
+        margin-left: -1192px;
+    }
+
+
+
+    /* #MASAISRAEL */
+    .masa__main {
+        margin-top: -34px;
+        background: url(../images/maisrael-phone.png) no-repeat 50% 50%;
+     }
     .content__masa {
         width: 100%;
         max-width: 403px;
@@ -1986,11 +2088,15 @@ h3 {
         font-size: 40px;
         line-height: 49px;
     }
+    .conteiner__masa {
+        min-height: 423px;
+    }
     .text__masa {
-        margin-top: 50px;
+        margin-top: 52px;
+        margin-left: -2px;
     } 
     .btn__masa {
         width: 264px;
-        margin-top: 0;
+        margin-top: 32px;
     }
 }
