@@ -779,6 +779,7 @@ h3 {
     width: 100%;
     height: 707px;
     background: url(../images/how-to-go.png) no-repeat 12px center, url(../images/stamp.png) no-repeat right 47%;
+    background-size: 42% auto, auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -787,7 +788,8 @@ h3 {
 }
 .content__how {
     position: relative;
-    width: 552px;
+    width: 60%;
+    max-width: 552px;
     height: 627px;
 /*    -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -801,7 +803,7 @@ h3 {
 
 }
 .text__how {
-    width: 480px;
+    max-width: 480px;
     margin-top: -10px;
     margin-bottom: 33px;
     font-size: 15px;
@@ -809,7 +811,7 @@ h3 {
     opacity: 0.87;
 }
 .heading__how {
-    width: 480px;
+    max-width: 480px;
     padding: 0;
     font-family: 'fira-sans', "arial", sans-serif;
     font-weight: 500;
@@ -820,6 +822,9 @@ h3 {
  .heading__how ul {
     margin-top: 4px;
     margin-bottom: 31px;
+    background-image: url("data:image/svg+xml,%3Csvg width='2' height='193' viewBox='0 0 2 193' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' d='M1 0.5V193' stroke='%23484848' stroke-dasharray='4 4'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position-y: 59px;
  }
 .item__how {
     font-size: 15px;
@@ -875,7 +880,7 @@ h3 {
     margin-top: 117px;
 }
 .text__how_bottom {
-    width: 520px;
+    max-width: 520px;
     margin-left: 14px;
     font-size: 15px;
     line-height: 21px;
@@ -892,14 +897,14 @@ h3 {
 .life__main {
     display: block;
     width: 100%;
-    min-height: 950px;
+    max-height: 950px;
     background: url(../images/watercolor_Bg_life.png) no-repeat center center, url(../images/watch.png) no-repeat right 82%;
     border-top: .1px solid transparent;
     margin-top: 113px;
 }
 .content__life {
-    width: 1152px;
-    min-height: 843px;
+    width: 100%;
+    height: auto;
     margin: -11px auto 64px;
     text-align: center;
     border-top: .1px solid transparent;
@@ -918,8 +923,10 @@ h3 {
 }
 .slides__life {
     width: 100%;
-    height: 732px;
+    height: 61vw;
+    max-height: 732px;
     margin-top: -8px;
+    margin-left: 7px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -938,22 +945,38 @@ h3 {
     position: relative;
     margin: 11px 7px;
 }
+.foto__life > img {
+    width: 100%;
+    height: auto;
+}
 .foto__life_1 {
+    width: 42.3%;
+    max-width: 482px;
     margin-left: -14px;
 }
+.foto__life_2 {
+    width: 18.6%;
+    max-width: 211px;
+}
 .foto__life_3 {
-    margin-left: -177px;
+    width: 36%;
+    max-width: 411px;
+    margin-left: -15.52%;
     margin-right: 0;
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
 }
 .foto__life_4 {
+    width: 36%;
+    max-width: 411px;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
 }
 .foto__life_5 {
+    width: 18.77%;
+    max-width: 214px;
     margin-left: 21px;
     margin-right: 0;
     -webkit-box-ordinal-group: 6;
@@ -965,31 +988,36 @@ h3 {
     bottom: 7px;
     font-family: 'raleway', "Apial", sans-serif;
     font-weight: 800;
-    font-size: 21px;
-    line-height: 23px;
+    font-size: 1.54vw;
+    line-height: 1.68vw;
     color: #fff;
     text-align: left;
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
 }
 .foto__life_1 .description__life {
-    width: 320px;
-    left: 40px;
+    width: 66.39%;
+    max-width: 320px;
+    left: 8.3%;
 }
 .foto__life_2 .description__life {
-    width: 120px;
-    left: 24px;
+    width: 56.87%;
+    max-width: 120px;
+    left: 11.37%;
 }
 .foto__life_3 .description__life {
-    width: 320px;
-    left: 32px;
+    width: 77.86%;
+    max-width: 320px;
+    left: 7.79%;
 }
 .foto__life_4 .description__life {
-    width: 360px;
-    left: 32px;
+    width: 87.59%;
+    max-width: 360px;
+    left: 7.79%;
 }
 .foto__life_5 .description__life {
-    width: 120px;
-    left: 24px;
+    width: 56.07%;
+    max-width: 120px;
+    left: 11.21%;
 }
 
 
@@ -1608,7 +1636,12 @@ h3 {
 
 
 
-
+@media (min-width: 1366px) {
+    .description__life {
+        font-size: 21px;
+        line-height: 23px;
+    }
+}
 @media (max-width: 767px) {
     
     h2 {
@@ -1892,5 +1925,45 @@ h3 {
         display: block;
         margin: 8px auto;
         box-sizing: border-box;
+    }
+
+    /* HOW TO GO */
+
+    .how__main {
+        margin-top: 49px;
+        background-size: 0, auto;
+    }
+    .content__how {
+        width: 100%;
+        min-width: 288px;
+        padding-left: 0;
+        margin-left: -6px;
+    }
+    .content__how h2 {
+        text-align: center;
+    }
+    .text__how {
+        margin-top: 2px;
+        margin-bottom: 25px;
+    }
+    .heading__how {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .heading__how ul {
+        margin-top: -7px;
+        margin-left: 11px;
+        background-image: url("data:image/svg+xml,%3Csvg width='2' height='241' viewBox='0 0 2 241' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' d='M1 0L0.999989 241' stroke='%23484848' stroke-dasharray='4 4'/%3E%3C/svg%3E");
+
+    }
+    .text__how, .item__how, .text__how_bottom {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .item__how {
+        height: 92px;
+    }
+    .item__how::before {
+        margin-right: 17px;
     }
 }
