@@ -2071,8 +2071,9 @@ h3 {
     /* #MASAISRAEL */
     .masa__main {
         margin-top: -34px;
-        background: url(../images/maisrael-phone.png) no-repeat 50% 50%;
-     }
+        background-position: 20% 50%;
+        background-size: 170% auto;
+    }
     .content__masa {
         width: 100%;
         max-width: 403px;
@@ -2098,5 +2099,12 @@ h3 {
     .btn__masa {
         width: 264px;
         margin-top: 32px;
+    }
+}
+@media (max-width: 320px) {
+    .masa__main {
+        background: url(../images/maisrael-phone.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: auto;
     }
 }
