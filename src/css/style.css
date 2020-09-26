@@ -1025,7 +1025,7 @@ h3 {
 .masa__main {
     display: block;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 148px;
     background: url(../images/maisrael.png) no-repeat center top;
     background-size: cover;
     border: .1px solid transparent;
@@ -1040,6 +1040,9 @@ h3 {
 }
 .content__masa {
     width: 403px;
+    margin-right: 52px;
+/*    margin-bottom: 110px;   */
+    margin-top: 0;
     text-align: left;
 }
 .text__masa {
@@ -1095,13 +1098,15 @@ h3 {
 .questions__main {
     display: block;
     width: 100%;
-    height: 940px;
+    min-height: 940px;
     margin-top: 62px;
-    background: url(../images/questions.png) no-repeat right center, url(../images/watercolor_bg_questions.png) no-repeat center top, url(../images/bag.png) no-repeat left bottom;
+    background: url(../images/questions.png) no-repeat 100% calc(420px - 25vw), url(../images/watercolor_bg_questions.png) no-repeat 50% 0, url(../images/bag.png) no-repeat 0 100%;
+    background-size: 50% auto,auto,auto;
      border: .1px solid transparent;
 }
 .content__questions {
-    width: 570px;
+    width: 50%;
+    max-width: 570px;
     margin-top: 70px;
 }
 .content__questions ul {
@@ -1119,7 +1124,8 @@ h3 {
 } 
 .heading__question {
     display: inline-block;
-    width: 400px;
+    width: 80%;
+    max-width: 400px;
     margin: 38px 0 30px 29px;
     font-size: 17px;
     line-height: 25px;
@@ -1165,12 +1171,12 @@ h3 {
     position: absolute;
     display: inline-block;
     background: url(../images/angle-down.svg) no-repeat;
-    right: 50px;
+    right: 5.8%;
     top: 50px;
     transform: translateY(-50%);
 }
 .text__question {
-    width: 480px;
+    max-width: 100%;
     margin-top: 25px;
     margin-bottom: 30px;
     font-size: 15px;
@@ -1643,6 +1649,9 @@ h3 {
         font-size: 21px;
         line-height: 23px;
     }
+    .content__masa {
+        margin-top: -110px;
+    }
 }
 @media (max-width: 767px) {
     
@@ -2100,7 +2109,43 @@ h3 {
         width: 264px;
         margin-top: 32px;
     }
+
+    /* QUESTIONS */
+
+    .questions__main {
+        margin-top: 10px;
+        background-size: 0, 0, auto;
+        background-position: 0, 0, -5% 91%;
+    }
+    .content__questions {
+        width: 100%;
+    }
+    .content__questions h2 {
+        text-align: center;
+    }
+    .item__questions {
+        margin-left: -10px;
+    }
+    .heading__question {
+        width: 86%;
+        margin-bottom: 8px;
+    }
+    .heading__question::before {
+        left: 5px;
+    }
+    .heading__question::after {
+        right: -7%;
+    }
+    .text__question {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 11px;
+        margin-left: 5px;
+        margin-bottom: 13px;
+    }
 }
+
+
 @media (max-width: 320px) {
     .masa__main {
         background: url(../images/maisrael-phone.png) no-repeat;
