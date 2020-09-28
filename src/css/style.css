@@ -1259,14 +1259,10 @@ h3 {
     height: 480px;
     margin-top: -28px;
     overflow: hidden;
-}  /*
-
-.reviews__testimonials {
-    width: 6504px;
-    display: flex;
-    justify-content: flex-start;
-    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-}  */
+}  
+.owl-carousel {
+    margin-top: -25px;
+}
 .review__testimonials {
     width: 100%;
     max-width: 1084px;
@@ -1298,7 +1294,7 @@ h3 {
     line-height: 36px;
     color: #484848;
     opacity: 0.74;
-    margin-top: 43px;
+    margin-top: -39px;
 }
 .content__review p {
     font-size: 17px;
@@ -1334,7 +1330,7 @@ h3 {
 }
 .social__review {
     position: absolute;
-    bottom: -44px;
+    bottom: -80px;
     right: 0;
 }
 .social img {
@@ -1342,27 +1338,45 @@ h3 {
 }
 .owl-carousel .owl-nav.disabled {
     display: inline-block!important;
+    position: absolute;
+    width: 96px;
+    right: 63%;
+    bottom: -4px;
+    transform: translateX(70%);
 }
-.owl-theme .owl-nav {
-    margin-left: 50%;
-    margin-top: 0;
+.owl-theme .owl-dots {
+    display: none;
 }
 .owl-carousel .owl-nav .owl-prev span {
     display: inline-block;
     width: 8px;
     height: 15px;
+    margin-right: 5px;
     transform: rotate(180deg);
     background: url(../images/angle-right-left.svg) no-repeat center center;
 }
 .owl-carousel .owl-nav .owl-next span {
-    display: inline-block;foto__testimonials
+    display: inline-block;
     width: 8px;
     height: 15px;
+    margin-left: 5px;
     background: url(../images/angle-right-left.svg) no-repeat center center;
 }
 .owl-carousel .owl-nav button {
     color: transparent!important;
 }
+.testimonials__counts {
+    display: inline-block;
+    width: 36px;
+    margin-right: 14px;
+    font-family: 'fira-sans', "arial", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #484848;
+    opacity: 0.5;
+}  
+/*
 .navigation__reviews {
     position: absolute;
     width: 96px;
@@ -1468,7 +1482,7 @@ h3 {
 }
 #slider__testimonials_switcher_6:checked ~ .navigation__reviews .pagination__reviews p:before {
     content: "6";
-}
+}  */
 
 
 /* CONTACTS */
@@ -2189,32 +2203,87 @@ h3 {
     }
 
     /* TESTIMONIALS */
-
+    .testimonials__main {
+        margin-top: 42px;
+    }
     .review__testimonials {
         flex-direction: column;
+        margin-top: 27px;
+    }
+    .owl-carousel {
+        margin-top: -25px;
+        margin-left: -5px;
+    }
+    .owl-carousel .owl-item .foto__testimonials {
+        width: 34%;
+        height: auto;
+        min-width: 233.33px;
+        min-height: 352.41px;
+        margin-left: 5px;
     }
     .owl-stage-outer.owl-height {
         min-height: 546.97px;
         height: auto !important;
     }
+    .content__review {
+        min-width: 288px;
+        margin-right: 0;
+        margin-left: 15px;
+    }
+    .content__review h4 {
+        margin-top: 21px;
+    }
+    .content__review p {
+        margin: 21px 0;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .content__review > a {
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .content__review .subtitle__content_review {
+        margin-left: -11px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .subtitle__content_review span {
+        display: block;
+        margin-left: 11px;
+    }
+    .owl-carousel .owl-nav.disabled {
+        top: 33.5%;
+        left: 50%;
+        transform: translateX(-44%);
+    }
     .social__review {
         position: relative;
         margin-top: 23px;
+        margin-left: -5px;
+        bottom: 0;
     }
 
 
     /* CONTACTS */
-
+    .contacts__main {
+        margin-top: 79px;
+        background-size: 0
+    }
     .map__cotacts {
         display: none;
     }
     .map__cotacts_phone {
+        display: inline-block;
         width: calc(100% + 15%*2);
         margin-left: -15%;
-        margin-bottom: 50px;
+        margin-bottom: 27px;
     }
     .map__cotacts_phone iframe {
         width: 100%;
+    }
+    .connection__contacts {
+        margin-left: -6px;
     }
     .content__contacts h2 {
         width: 100%;
@@ -2222,27 +2291,83 @@ h3 {
     }
     .contact__location {
         width: 100%;
-        margin-bottom: 50px;
+        margin-top: -4px;
+        margin-bottom: 16px;
+        margin-left: -1px;
+    }
+    .coordinates__curator {
+        width: 100%;
+        min-width: 288px;
+        margin-top: -12px;
+        margin-left: 1px;
+    }
+    .name__curator {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .name__curator_blue {
+        margin-right: 5px;
+    }
+    .adress__curator {
+        font-size: 13px;
+        line-height: 19px;
+        margin-top: -3px;
+    }
+    .social__curator {
+        margin-top: 0px;
+        margin-left: -2px;
+    }
+    .definition__curator {
+        margin-top: 35px;
+    }
+    .town__contact {
+        font-size: 15px;
+        line-height: 22px;
     }
     .form__contacts {
         flex-direction: column;
         align-items: center;
     }
     .form__contacts legend {
-        margin-right: 0;
+        margin-right: 3px;
+        font-size: 16px;
+        line-height: 24px;
     }
     .form__contacts > input {
+        width: 288px;
         margin-right: 0;
-        margin-top: 5px;
+        margin: 5px auto;
+    }
+    .form__contacts > input:nth-child(3) {
+        margin-top: 106px;
+    }
+    .form__contacts > input:last-child {
+        width: 264px;
+        margin: 16px auto;
     }
     .warning__contacts {
         width: 100%;
         max-width: 364px;
-        margin: 0 auto;
+        min-width: 288px;
+        margin: -317px auto 308px;
+        font-size: 13px;
+        line-height: 19px;
+        margin-left: -5px;
     }
     .footer__content {
         justify-content: space-around;
         flex-direction: column;
+        margin-top: 32px;
+    }
+    .footer__copyright {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 24px;
+    }
+    .social__footer {
+        width: 136px;
+        height: 32px;
+        margin-top: 21px;
     }
 }
 
