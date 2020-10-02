@@ -97,19 +97,19 @@ ul {
     padding: 0;
     
 }
-h2, h3 {
+.headline, .headline-small {
     font-family: 'montserrat', "arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     letter-spacing: -0.02em;
     color: #1fc0fc;
 }
-h2 {
+.headline {
     font-size: 40px;
     line-height: 49px;
     text-transform: uppercase;
 }
-h3 {
+.headline-small {
     font-size: 28px;
     line-height: 34px;
 }
@@ -231,10 +231,8 @@ h3 {
     width: 264px;
     margin: 0 auto;
 }
-.form__inner_top legend{
+.form__inner_top > legend {
     margin: 0 0 32px;
-}
-.form__inner_top .text__legend {
     font-size: 15px;
     line-height: 26px;
     opacity: 0.7;
@@ -288,6 +286,7 @@ h3 {
     width: 16px;
     height: 16px;
     margin-right: 8px;
+    vertical-align: middle;
     border: 1px solid #FFC341;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -315,12 +314,14 @@ h3 {
     position: absolute;
     top: -24px;
     right: 32px;
+    vertical-align: middle;
 }
 .md-effect-10 .md-close:hover, 
 .md-effect-10 .md-close:focus img, 
 .md-effect-10 .md-close:active {
     display: inline-block;
     border: 1px solid #ffc341;
+    vertical-align: middle;
 }
 .md-effect-10 .md-content {
     position: relative;
@@ -440,7 +441,7 @@ h3 {
     margin: -46px auto 0;
     text-align: center;
 }
-.text__about {
+.program__about p {
     width: 77.5%;
     max-width: 720px;
     min-width: 288px;
@@ -556,7 +557,7 @@ h3 {
     margin-top: 18px;
     margin-bottom: 25px;
 } 
-.text__program, .text__label {
+.description__program > p, .text__label {
     font-size: 15px;
     line-height: 26px;
     opacity: 0.87;
@@ -799,7 +800,7 @@ h3 {
             box-sizing: border-box;
 
 }
-.text__how {
+.content__how p {
     max-width: 480px;
     margin-top: -10px;
     margin-bottom: 33px;
@@ -876,7 +877,7 @@ h3 {
     position: absolute;
     margin-top: 117px;
 }
-.text__how_bottom {
+.line__vertical > p {
     max-width: 520px;
     margin-left: 14px;
     font-size: 15px;
@@ -895,7 +896,7 @@ h3 {
     display: block;
     width: 100%;
     max-height: 950px;
-    background: url(../images/watercolor_Bg_life.png) no-repeat center center, url(../images/watch.png) no-repeat right 82%;
+    background: url(../images/watercolor_bg_life.png) no-repeat center center, url(../images/watch.png) no-repeat right 82%;
     border-top: .1px solid transparent;
     margin-top: 113px;
 }
@@ -910,7 +911,7 @@ h3 {
     margin-top: 57px;
     margin-bottom: 23px;
 }
-.text__life {
+.content__life > p {
     width: 720px;
     margin: 0 auto;
     font-size: 17px;
@@ -1045,7 +1046,7 @@ h3 {
     margin-top: 0;
     text-align: left;
 }
-.text__masa {
+.content__masa > p {
     margin-top: -11px;
     padding-left: 4px;
     font-size: 17px;
@@ -1131,12 +1132,14 @@ h3 {
     line-height: 25px;
     font-weight: 400;
     color: #484848;
+    vertical-align: middle;
 }
 .heading__question:before {
     content: "";
     width: 13px;
     height: 48px;
     display: inline-block;
+    vertical-align: middle;
     position: absolute;
     left: 0;
     top: 24px;
@@ -1174,8 +1177,9 @@ h3 {
     right: 8%;
     top: 50px;
     transform: translateY(-50%);
+    vertical-align: middle;
 }
-.text__question {
+.item__questions > p {
     max-width: 100%;
     margin-top: 25px;
     margin-bottom: 30px;
@@ -1183,7 +1187,7 @@ h3 {
     line-height: 21px;
     opacity: 0.74;
 }
-.item__questions input, .item__questions .text__question {
+.item__questions input, .item__questions > p {
     display: none;
 }
 #spoiler1:checked ~ p {
@@ -1309,15 +1313,16 @@ h3 {
     font-size: 17px;
     line-height: 25px;
     color: #1fc0fc;
+    vertical-align: middle;
 }
-.content__review .subtitle__content_review {
+.content__review h5 {
     margin-top: -24px;
     margin-bottom: 13px;
     font-size: 15px;
     line-height: 21px;
     opacity: 0.74;
 }
-.subtitle__content_review span {
+.content__review h5 span {
     margin-left: -2px;
     color: #1fc0fc;
 }
@@ -1343,6 +1348,7 @@ h3 {
     right: 63%;
     bottom: -4px;
     transform: translateX(70%);
+    vertical-align: middle;
 }
 .owl-theme .owl-dots {
     display: none;
@@ -1354,6 +1360,7 @@ h3 {
     margin-right: 5px;
     transform: rotate(180deg);
     background: url(../images/angle-right-left.svg) no-repeat center center;
+    vertical-align: middle;
 }
 .owl-carousel .owl-nav .owl-next span {
     display: inline-block;
@@ -1361,6 +1368,7 @@ h3 {
     height: 15px;
     margin-left: 5px;
     background: url(../images/angle-right-left.svg) no-repeat center center;
+    vertical-align: middle;
 }
 .owl-carousel .owl-nav button {
     color: transparent!important;
@@ -1369,6 +1377,7 @@ h3 {
     display: inline-block;
     width: 36px;
     margin-right: 14px;
+    vertical-align: middle;
     font-family: 'fira-sans', "arial", sans-serif;
     font-size: 17px;
     font-weight: 400;
@@ -1543,6 +1552,7 @@ h3 {
     display: inline-block;
     background: url(../images/marker.svg) no-repeat;
     margin-right: 6px;
+    vertical-align: middle;
 }
 .town__contact span:after {
     content: "";
@@ -1582,7 +1592,7 @@ h3 {
     line-height: 19px;
     opacity: 0.74;
 }
-.definition__curator {
+.curator__contact > p {
     font-size: 17px;
     line-height: 29px;
     opacity: 0.87;
@@ -1601,6 +1611,12 @@ h3 {
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+.form__contacts fieldset {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+}
 .form__contacts legend {
     display: inline-block;
     width: 328px;
@@ -1612,15 +1628,16 @@ h3 {
     opacity: 0.87;
     vertical-align: middle;
 }
-.form__contacts > input {
+.form__contacts input {
     width: 250px;
     height: 59px;
     border: 2px solid #E3E3E3;
     border-radius: 29.5px;
     box-sizing: border-box;
      padding-left: 40px;
-     margin-right: 24px;
-     margin-top: -3px;
+     margin-right: 15px;
+     margin-top: -29.5px;
+     transform: translateY(-50%);
     font-family: 'fira-sans', "arial", sans-serif;
     font-size: 17px;
     font-weight: 500;
@@ -1629,12 +1646,12 @@ h3 {
     color: #484848;
     opacity: 0.5;
 }
-.form__contacts > input:hover, 
-.form__contacts > input:focus {
+.form__contacts input:hover, 
+.form__contacts input:focus {
     border: 2px solid #FFC341;
     opacity: 1;
 }
-.form__contacts > input:active {
+.form__contacts input:active {
     border: 2px solid #484848;
     opacity: 1;
 }
@@ -1664,7 +1681,7 @@ h3 {
     background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(109.15deg, #FFC341 -50.3%, #FFD701 63.1%);
     border: none;
 }
-.warning__contacts {
+.content__contacts > p {
     width: 364px;
     margin-top: 8px;
     font-size: 13px;
@@ -1691,7 +1708,7 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
 }
-.footer__copyright {
+.footer__content p {
     padding-left: 21px;
     font-family: 'fira-sans', "arial", sans-serif;
     font-size: 12px;
@@ -1819,13 +1836,13 @@ h3 {
     .program__about {
         margin: -32px auto 0; 
     }
-    .text__about {
+    .program__about p {
         width: 100%;
         text-align: left;
         margin-top: 33px;
         margin-left: -14px;
     }
-    .text__about span {
+    .program__about p > span {
         display: none;
     }
 
@@ -1895,7 +1912,7 @@ h3 {
     .description__program > h3 {
         margin-bottom: 16px;
     }
-    .description__program .text__program {
+    .description__program > p {
         font-size: 14px;
         line-height: 22px;
     }
@@ -2011,7 +2028,7 @@ h3 {
     .content__how h2 {
         text-align: center;
     }
-    .text__how {
+    .content__how > p {
         margin-top: 2px;
         margin-bottom: 25px;
     }
@@ -2025,7 +2042,7 @@ h3 {
         background-image: url("data:image/svg+xml,%3Csvg width='2' height='241' viewBox='0 0 2 241' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' d='M1 0L0.999989 241' stroke='%23484848' stroke-dasharray='4 4'/%3E%3C/svg%3E");
 
     }
-    .text__how, .item__how, .text__how_bottom {
+    .content__how > p, .item__how, .line__vertical > p {
         font-size: 14px;
         line-height: 22px;
     }
@@ -2050,14 +2067,14 @@ h3 {
     .foto__life_phone {
         display: initial;
     }
-    .text__life {
+    .content__life > p {
         width: 100%;
         margin-left: 4px;
         text-align: left;
-    }
-    .text__life span {
+    }  /*
+    .content__life > p span {
         display: none;
-    }
+    }  */
     .slider__life {
         width: 288px;
         margin: 33px auto 0;
@@ -2159,7 +2176,7 @@ h3 {
     .conteiner__masa {
         min-height: 423px;
     }
-    .text__masa {
+    .content__masa > p {
         margin-top: 52px;
         margin-left: -2px;
     } 
@@ -2194,7 +2211,7 @@ h3 {
     .heading__question::after {
         right: -7%;
     }
-    .text__question {
+    .item__questions > p {
         font-size: 14px;
         line-height: 22px;
         margin-top: 11px;
@@ -2243,12 +2260,12 @@ h3 {
         font-size: 16px;
         line-height: 24px;
     }
-    .content__review .subtitle__content_review {
+    .content__review h5 {
         margin-left: -11px;
         font-size: 14px;
         line-height: 22px;
     }
-    .subtitle__content_review span {
+    .content__review h5 span {
         display: block;
         margin-left: 11px;
     }
@@ -2278,6 +2295,7 @@ h3 {
         width: calc(100% + 15%*2);
         margin-left: -15%;
         margin-bottom: 27px;
+        vertical-align: middle;
     }
     .map__cotacts_phone iframe {
         width: 100%;
@@ -2317,7 +2335,7 @@ h3 {
         margin-top: 0px;
         margin-left: -2px;
     }
-    .definition__curator {
+    .curator__contact > p {
         margin-top: 35px;
     }
     .town__contact {
@@ -2329,7 +2347,6 @@ h3 {
         align-items: center;
     }
     .form__contacts legend {
-        margin-right: 3px;
         font-size: 16px;
         line-height: 24px;
     }
@@ -2338,14 +2355,14 @@ h3 {
         margin-right: 0;
         margin: 5px auto;
     }
-    .form__contacts > input:nth-child(3) {
+    .form__contacts .form__contacts_name-1 {
         margin-top: 106px;
     }
-    .form__contacts > input:last-child {
+    .form__contacts .btn__contacts {
         width: 264px;
         margin: 16px auto;
     }
-    .warning__contacts {
+    .content__contacts > p {
         width: 100%;
         max-width: 364px;
         min-width: 288px;
@@ -2359,7 +2376,7 @@ h3 {
         flex-direction: column;
         margin-top: 32px;
     }
-    .footer__copyright {
+    .footer__content > p {
         font-size: 12px;
         line-height: 18px;
         margin-top: 24px;
