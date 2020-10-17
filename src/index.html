@@ -67,7 +67,12 @@
 		<section class="presentation presentation__main">
 			<h1 class="visually-hidden">Израиль</h1>
 			<div class="content content__presentation conteiner">
-				<div class="title title__main"><img width="1018" height="340" src="images/israel.png" alt="Надпись Израиль с изображением внутри"></div>
+				<!-- <div class="title title__main"><img width="1018" height="340" src="images/israel.png" alt="Надпись Израиль с изображением внутри"></div> -->
+				<picture class="title title__main">
+					<!-- 1x: 1018px; 2x: 2036px -->
+					<source srcset="images/israel@1x.webp 1x, images/israel@2x.webp 2x" type="image/webp">
+					<img width="1018" height="340" srcset="images/israel@2x.png" src="images/israel@1x.png" alt="Надпись Израиль с изображением внутри">
+				</picture>
 				<div class="girl">
 					<a href="#" class="scroll-down"><img width="76" height="132" src="images/scroll-down.svg" alt="Скрол вниз"></a>	
 					<p>Учёба, путешествие и карьера для еврейской молодёжи</p>
@@ -83,8 +88,16 @@
 				В&nbsp;течение&nbsp;освоения программ предусмотрен грант от 4200 до 8400$.<span>&emsp;</span></p>
 			</div>
 			<div class="photo photo__about_wrap">
-				<img class="photo__about" src="images/photo.png" alt="Молодежь у костра" width="870" height="460">
-				<img class="photo__about_small" src="images/photo-small.png" alt="Трое молодых ребят у костра" width="320" height="224">  
+				<!-- <img class="photo__about" src="images/photo.png" alt="Молодежь у костра" width="870" height="460">
+				<img class="photo__about_small" src="images/photo-small.png" alt="Трое молодых ребят у костра" width="320" height="224"> -->
+				<picture class="photo photo__about_inner">
+					<!-- 1x: 870px; 2x: 1740px -->
+					<!-- small 1x: 320px; 2x: 640px -->
+					<source media="(max-width: 1366px)" srcset="images/photo@1x.webp 1x, images/photo@2x.webp 2x" type="image/webp">
+					<source media="(max-width: 320px)" srcset="images/photo-small@1x.webp 1x, images/photo-small@2x.webp 2x" type="image/webp">
+					<img class="photo__about" width="870" height="460" srcset="images/photo@2x.png" src="images/photo@1x.png" alt="Надпись Израиль с изображением внутри">
+					<img class="photo__about_small" width="320" height="224" srcset="images/photo-small@2x.png" src="images/photo-small@1x.png" alt="Надпись Израиль с изображением внутри">
+				</picture>  
 				<img width="96" height="96" class="play-button" src="images/play-button.svg" alt="Значёк кнопки Играть">
 			</div>
 		</section>
@@ -188,36 +201,66 @@
 					<input type="radio" name="slide-life" id="slide-life-5" class="visually-hidden">
 					<article class="slides slides__life">
 						<figure class="foto foto__life foto__life_1">
-							<img width="482" height="732" src="images/foto-life-1.png" alt="Фотография мечети" class="foto__life_desctop">
-							<img width="288" height="400" src="images/foto-life-1-phone.png" alt="Фотография мечети" class="foto__life_phone">
+							<picture>
+								<!-- 1х: 482px; 2x: 964px -->
+								<!-- phone 1х: 288px; 2x: 576px -->
+								<source type="image/webp" srcset="images/life-img-1-phone@1x.webp 1x, images/life-img-1-phone@2x.webp 2x" media="(max-width: 320px) ">
+								<source type="image/webp" srcset="images/life-img-1@1x.webp 1x, images/life-img-1@2x.webp 2x" media="(max-width: 1366px) ">
+								<img width="482" height="732" src="images/life-img-1@1x.png" srcset="images/life-img-1@1x.png 1x, images/life-img-1@1x.png 2x" alt="Фотография мечети" class="foto__life_desctop">
+								<img width="288" height="400" src="images/life-img-1-phone@1x.png" srcset="images/life-img-1-phone@1x.png 1x, images/life-img-1-phone@2x.png 2x" alt="Фотография мечети" class="foto__life_phone">
+							</picture>
 							<figcaption class="description description__life">
 								<h4>Экскурсии по Израилю  и&nbsp;знакомство с его историей</h4>
 							</figcaption>
 						</figure>
 						<figure class="foto foto__life foto__life_2">
-							<img width="211" height="318" src="images/foto-life-2.png" alt="Парень изучает иврит" class="foto__life_desctop">
-							<img width="288" height="400" src="images/foto-life-2-phone.png" alt="Парень изучает иврит" class="foto__life_phone">
+							<picture>
+								<!-- 1х: 211px; 2x: 422px -->
+								<!-- phone 1х: 288px; 2x: 576px -->
+								<source type="image/webp" srcset="images/life-img-2-phone@1x.webp 1x, images/life-img-2-phone@2x.webp 2x" media="(max-width: 320px) ">
+								<source type="image/webp" srcset="images/life-img-2@1x.webp 1x, images/life-img-2@2x.webp 2x" media="(max-width: 1366px) ">
+								<img width="211" height="318" src="images/life-img-2@1x.png" srcset="images/life-img-2@1x.png 1x, images/life-img-2@1x.png 2x" alt="Парень изучает иврит" class="foto__life_desctop">
+								<img width="288" height="400" src="images/life-img-2-phone@1x.png" srcset="images/life-img-2-phone@1x.png 1x, images/life-img-2-phone@2x.png 2x" alt="Парень изучает иврит" class="foto__life_phone">
+							</picture>
 							<figcaption class="description description__life">
 								<h4>Изучение иврита</h4>
 							</figcaption>
 						</figure>
 						<figure class="foto foto__life foto__life_3">
-							<img width="411" height="318" src="images/foto-life-3.png" alt="Один молодой человек обучает другого" class="foto__life_desctop">
-							<img width="288" height="400" src="images/foto-life-3-phone.png" alt="Один молодой человек обучает другого" class="foto__life_phone">
+							<picture>
+								<!-- 1х: 411px; 2x: 822px -->
+								<!-- phone 1х: 288px; 2x: 576px -->
+								<source type="image/webp" srcset="images/life-img-3-phone@1x.webp 1x, images/life-img-3-phone@2x.webp 2x" media="(max-width: 320px) ">
+								<source type="image/webp" srcset="images/life-img-3@1x.webp 1x, images/life-img-3@2x.webp 2x" media="(max-width: 1366px) ">
+								<img width="411" height="318" src="images/life-img-3@1x.png" srcset="images/life-img-3@1x.png 1x, images/life-img-3@1x.png 2x" alt="Один молодой человек обучает другого" class="foto__life_desctop">
+								<img width="288" height="400" src="images/life-img-3-phone@1x.png" srcset="images/life-img-3-phone@1x.png 1x, images/life-img-3-phone@2x.png 2x" alt="Один молодой человек обучает другого" class="foto__life_phone">
+							</picture>
 							<figcaption class="description description__life">
 								<h4>Обучение современным навыкам и профессиям</h4>
 							</figcaption>
 						</figure>
 						<figure class="foto foto__life foto__life_4">
-							<img width="411" height="318" src="images/foto-life-4.png" alt="Трое молоды людей смеются" class="foto__life_desctop">
-							<img width="288" height="400" src="images/foto-life-4-phone.png" alt="Трое молоды людей смеются" class="foto__life_phone">
+							<picture>
+								<!-- 1х: 411px; 2x: 822px -->
+								<!-- phone 1х: 288px; 2x: 576px -->
+								<source type="image/webp" srcset="images/life-img-4-phone@1x.webp 1x, images/life-img-4-phone@2x.webp 2x" media="(max-width: 320px) ">
+								<source type="image/webp" srcset="images/life-img-4@1x.webp 1x, images/life-img-4@2x.webp 2x" media="(max-width: 1366px) ">
+								<img width="411" height="318" src="images/life-img-4@1x.png" srcset="images/life-img-4@1x.png 1x, images/life-img-4@1x.png 2x" alt="Трое молоды людей смеются" class="foto__life_desctop">
+								<img width="288" height="400" src="images/life-img-4-phone@1x.png" srcset="images/life-img-4-phone@1x.png 1x, images/life-img-4-phone@2x.png 2x" alt="Трое молоды людей смеются" class="foto__life_phone">
+							</picture>
 							<figcaption class="description description__life">
 								<h4>Совместные творческие проекты с израильской молодёжью</h4>
 							</figcaption>
 						</figure>
 						<figure class="foto foto__life foto__life_5">
-							<img width="214" height="318" src="images/foto-life-5.png" alt="Парень на вершине горы горы в лучах заката" class="foto__life_desctop">
-							<img width="288" height="400" src="images/foto-life-5-phone.png" alt="Парень на вершине горы горы в лучах заката" class="foto__life_phone">
+							<picture>
+								<!-- 1х: 214px; 2x: 428px -->
+								<!-- phone 1х: 288px; 2x: 576px -->
+								<source type="image/webp" srcset="images/life-img-5-phone@1x.webp 1x, images/life-img-5-phone@2x.webp 2x" media="(max-width: 320px) ">
+								<source type="image/webp" srcset="images/life-img-5@1x.webp 1x, images/life-img-5@2x.webp 2x" media="(max-width: 1366px) ">
+								<img width="214" height="318" src="images/life-img-5@1x.png" srcset="images/life-img-5@1x.png 1x, images/life-img-5@1x.png 2x" alt="Парень на вершине горы горы в лучах заката" class="foto__life_desctop">
+								<img width="288" height="400" src="images/life-img-5-phone@1x.png" srcset="images/life-img-5-phone@1x.png 1x, images/life-img-5-phone@2x.png 2x" alt="Парень на вершине горы горы в лучах заката" class="foto__life_phone">
+							</picture>
 							<figcaption class="description description__life">
 								<h4>Развитие  лидерства</h4>
 							</figcaption>
@@ -291,9 +334,11 @@
 				<h2 class="headline">Отзывы</h2>
 				<div class="owl-carousel owl-theme">
 					<figure class="review review__testimonials review_1 item">
-						<div class="foto foto__testimonials">
-							<img width="364" height="480" src="images/testimonials.png" alt="Девушка смеётся">
-						</div>
+						<picture class="foto foto__testimonials">
+							<!-- 1х: 364px; 2x: 728px -->
+							<source type="image/webp" srcset="images/testimonials@1x.webp 1x, images/testimonials@2x.webp 2x" media="(max-width: 1366px) ">
+							<img width="364" height="480" src="images/testimonials@1x.png" srcset="images/testimonials@1x.png 1x, images/testimonials@2x.png 2x" alt="Девушка смеётся">
+						</picture>
 						<figcaption class="content content__review">
 							<h4>Ольга Михайлова 1</h4>
 							<h5 class="text"><span>Программа:</span>&ensp;	Арт-Тель, февраль-сетнябрь 2017</h5>
@@ -308,9 +353,11 @@
 						</figcaption>
 					</figure>
 					<figure class="review review__testimonials review_2 item">
-						<div class="foto foto__testimonials">
-							<img width="364" height="480" src="images/testimonials.png" alt="Девушка смеётся">
-						</div>
+						<picture class="foto foto__testimonials">
+							<!-- 1х: 364px; 2x: 728px -->
+							<source type="image/webp" srcset="images/testimonials@1x.webp 1x, images/testimonials@2x.webp 2x" media="(max-width: 1366px) ">
+							<img width="364" height="480" src="images/testimonials@1x.png" srcset="images/testimonials@1x.png 1x, images/testimonials@2x.png 2x" alt="Девушка смеётся">
+						</picture>
 						<figcaption class="content content__review">
 							<h4>Ольга Михайлова 2</h4>
 							<h5 class="text"><span>Программа:</span>&ensp;	Арт-Тель, февраль-сетнябрь 2017</h5>
@@ -325,9 +372,11 @@
 						</figcaption>
 					</figure>
 					<figure class="review review__testimonials review_3 item">
-						<div class="foto foto__testimonials">
-							<img width="364" height="480" src="images/testimonials.png" alt="Девушка смеётся">
-						</div>
+						<picture class="foto foto__testimonials">
+							<!-- 1х: 364px; 2x: 728px -->
+							<source type="image/webp" srcset="images/testimonials@1x.webp 1x, images/testimonials@2x.webp 2x" media="(max-width: 1366px) ">
+							<img width="364" height="480" src="images/testimonials@1x.png" srcset="images/testimonials@1x.png 1x, images/testimonials@2x.png 2x" alt="Девушка смеётся">
+						</picture>
 						<figcaption class="content content__review">
 							<h4>Ольга Михайлова 3</h4>
 							<h5 class="text"><span>Программа:</span>&ensp;	Арт-Тель, февраль-сетнябрь 2017</h5>
@@ -342,9 +391,11 @@
 						</figcaption>
 					</figure>
 					<figure class="review review__testimonials review_4 item">
-						<div class="foto foto__testimonials">
-							<img width="364" height="480" src="images/testimonials.png" alt="Девушка смеётся">
-						</div>
+						<picture class="foto foto__testimonials">
+							<!-- 1х: 364px; 2x: 728px -->
+							<source type="image/webp" srcset="images/testimonials@1x.webp 1x, images/testimonials@2x.webp 2x" media="(max-width: 1366px) ">
+							<img width="364" height="480" src="images/testimonials@1x.png" srcset="images/testimonials@1x.png 1x, images/testimonials@2x.png 2x" alt="Девушка смеётся">
+						</picture>
 						<figcaption class="content content__review">
 							<h4>Ольга Михайлова 4</h4>
 							<h5 class="text"><span>Программа:</span>&ensp;	Арт-Тель, февраль-сетнябрь 2017</h5>
@@ -359,9 +410,11 @@
 						</figcaption>
 					</figure>
 					<figure class="review review__testimonials review_5 item">
-						<div class="foto foto__testimonials">
-							<img width="364" height="480" src="images/testimonials.png" alt="Девушка смеётся">
-						</div>
+						<picture class="foto foto__testimonials">
+							<!-- 1х: 364px; 2x: 728px -->
+							<source type="image/webp" srcset="images/testimonials@1x.webp 1x, images/testimonials@2x.webp 2x" media="(max-width: 1366px) ">
+							<img width="364" height="480" src="images/testimonials@1x.png" srcset="images/testimonials@1x.png 1x, images/testimonials@2x.png 2x" alt="Девушка смеётся">
+						</picture>
 						<figcaption class="content content__review">
 							<h4>Ольга Михайлова 5</h4>
 							<h5 class="text"><span>Программа:</span>&ensp;	Арт-Тель, февраль-сетнябрь 2017</h5>
@@ -376,9 +429,11 @@
 						</figcaption>
 					</figure>
 					<figure class="review review__testimonials review_6 item">
-						<div class="foto foto__testimonials">
-							<img width="364" height="480" src="images/testimonials.png" alt="Девушка смеётся">
-						</div>
+						<picture class="foto foto__testimonials">
+							<!-- 1х: 364px; 2x: 728px -->
+							<source type="image/webp" srcset="images/testimonials@1x.webp 1x, images/testimonials@2x.webp 2x" media="(max-width: 1366px) ">
+							<img width="364" height="480" src="images/testimonials@1x.png" srcset="images/testimonials@1x.png 1x, images/testimonials@2x.png 2x" alt="Девушка смеётся">
+						</picture>
 						<figcaption class="content content__review">
 							<h4>Ольга Михайлова 6</h4>
 							<h5 class="text"><span>Программа:</span>&ensp;	Арт-Тель, февраль-сетнябрь 2017</h5>
@@ -406,7 +461,11 @@
 				<div class="contact contact__location">
 					<p class="text town town__contact">Ваш город:&emsp;<span>новосибирск</span></p>
 					<div class="curator curator__contact">
-						<img width="112" height="112" src="images/curator.jpg" alt="Фотография куратора">
+						<picture>
+							<!-- 1х: 112px; 2x: 224px -->
+							<source type="image/webp" srcset="images/curator@1x.webp 1x, images/curator@2x.webp 2x" media="(max-width: 1366px) ">
+							<img width="112" height="112" src="images/curator@1x.jpg" srcset="images/curator@1x.png 1x, images/curator@2x.png 2x" alt="Фотография куратора">
+						</picture>
 						<div class="coordinates coordinates__curator">
 							<p class="text name name__curator"><span class="text name__curator name__curator_blue">Ваш куратор:</span> Анна Горелик</p>
 							<p class="text adress adress__curator">Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»</p>
@@ -467,6 +526,9 @@
 	<!-- Для слайдеров -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+
+	<!-- для webp -->
+	<script src="js/modernizr-custom.min.js"></script>
 
 	<script src="js/main.js"></script>
 

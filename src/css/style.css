@@ -269,7 +269,6 @@ ul {
 }
 .form__bell_consent {
     margin-top: 16px;
-/*    padding-left: 24px;   */
     font-size: 13px;
     line-height: 19px;
     opacity: 0.74;
@@ -355,9 +354,33 @@ ul {
     min-height: 616.88px;
     margin-left: 50%;
     transform: translateX(-50%);
-    background: url(../images/bg.png) no-repeat top center;
+    background: url(../images/bg@1x.webp) no-repeat top center;
     background-size: 100% 97%;
     border-top: .1px solid transparent;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .presentation__main {
+        background: url(../images/bg@2x.webp) no-repeat top center;
+        background-size: 100% 97%;
+    }
+}
+.no-webp .presentation__main {
+    background: url(../images/bg@1x.png) no-repeat top center;
+    background-size: 100% 97%;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .no-webp .presentation__main {
+        background: url(../images/bg@2x.png) no-repeat top center;
+        background-size: 100% 97%;
+    }
 }
 .content__presentation {
     width: 100%;
@@ -383,7 +406,6 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-/*    background: url(../images/pic_overlay.jpg) no-repeat center center;  */
 }
 .title__main img {
     width: 100%;
@@ -395,10 +417,34 @@ ul {
     height: 77.44vw;
     max-height: 906px;
     min-height: 604.88px;
-    background: url(../images/girl.png) no-repeat 100% bottom;
+    background: url(../images/girl@1x.webp) no-repeat 100% bottom;
     background-size: 100% 100%;
     margin-left: 50%;
     transform: translateX(-50%);
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .girl {
+        background: url(../images/girl@2x.webp) no-repeat top center;
+        background-size: 100% 97%;
+    }
+}
+.no-webp .girl {
+    background: url(../images/girl@1x.png) no-repeat 100% bottom;
+    background-size: 100% 100%;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .no-webp .girl {
+        background: url(../images/girl@2x.png) no-repeat top center;
+        background-size: 100% 97%;
+    }
 }
 .girl p {
     position: absolute;
@@ -429,11 +475,33 @@ ul {
 /* ABOUT */ 
 .about__main {
     width: 100%;
-/*    height: 753px;  */
-    background: url(../images/watercolor-bg-program.png) no-repeat;
+    background: url(../images/watercolor-bg-program@1x.webp) no-repeat;
     background-size: 100%;
     background-position: 50% 281%;
     border-top: .1px solid transparent;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .about__main {
+        background: url(../images/watercolor-bg-program@2x.webp) no-repeat;
+    }
+}
+.no-webp .about__main {
+    background: url(../images/watercolor-bg-program@1x.png) no-repeat;
+    background-size: 100%;
+    background-position: 50% 281%;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .no-webp .about__main {
+        background: url(../images/watercolor-bg-program@2x.png) no-repeat;
+    }
 }
 .program__about {
 /*    width: 870px;   
@@ -451,6 +519,9 @@ ul {
     transform: translate(10px, -10px);
 }
 .photo__about_wrap {
+    position: relative;
+}
+.photo__about_inner {
     position: relative;
     margin-top: 39px;
     display: flex;
@@ -486,8 +557,29 @@ ul {
 /* PROGRAMS */
 .programs__main {
     width: 100%;
-    background: url(../images/sketch_bg.png) no-repeat 100% 40%;
+    background: url(../images/sketch_bg@1x.webp) no-repeat 100% 40%;
     border-top: .1px solid transparent;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .programs__main {
+        background: url(../images/sketch_bg@2x.webp) no-repeat 100% 40%;
+    }
+}
+.no-webp .programs__main {
+    background: url(../images/sketch_bg@1x.png) no-repeat 100% 40%;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .no-webp .programs__main {
+        background: url(../images/sketch_bg@2x.png) no-repeat 100% 40%;
+    }
 }
 .content__programs {
     height: 456px;
@@ -714,9 +806,33 @@ ul {
     width: 100%;
     height: 594px;
     margin-top: 28px;
-    background: url(../images/girl-flag-bg.png) no-repeat 100% 65%, url(../images/backpack.png) no-repeat 0 41%;
+    background: url(../images/girl-flag-bg@1x.webp) no-repeat 100% 65%, url(../images/backpack@1x.webp) no-repeat 0 41%;
     background-size: 60% auto, auto;
     border-top: .1px solid transparent;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .want__main {
+        background: url(../images/girl-flag-bg@2x.webp) no-repeat 100% 65%, url(../images/backpack@2x.webp) no-repeat 0 41%;
+        background-size: 60% auto, auto;
+    }
+}
+.no-webp .want__main {
+    background: url(../images/girl-flag-bg@1x.png) no-repeat 100% 65%, url(../images/backpack@1x.png) no-repeat 0 41%;
+    background-size: 60% auto, auto;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .no-webp .want__main {
+        background: url(../images/girl-flag-bg@2x.png) no-repeat 100% 65%, url(../images/backpack@2x.png) no-repeat 0 41%;
+        background-size: 60% auto, auto;
+    }
 }
 .content__want {
     margin-top: 210px;
@@ -779,13 +895,37 @@ ul {
 .how__main {
     width: 100%;
     height: 707px;
-    background: url(../images/how-to-go.png) no-repeat 12px center, url(../images/stamp.png) no-repeat right 47%;
+    background: url(../images/how-to-go@1x.webp) no-repeat 12px center, url(../images/stamp@1x.webp) no-repeat right 47%;
     background-size: 42% auto, auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-top: 160px;
     align-items: center;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .how__main {
+        background: url(../images/how-to-go@2x.webp) no-repeat 12px center, url(../images/stamp@2x.webp) no-repeat right 47%;
+        background-size: 42% auto, auto;
+    }
+}
+.no-webp .how__main {
+    background: url(../images/how-to-go@1x.png) no-repeat 12px center, url(../images/stamp@1x.png) no-repeat right 47%;
+    background-size: 42% auto, auto;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .no-webp .how__main {
+        background: url(../images/how-to-go@2x.png) no-repeat 12px center, url(../images/stamp@2x.png) no-repeat right 47%;
+        background-size: 42% auto, auto;
+    }
 }
 .content__how {
     position: relative;
@@ -896,9 +1036,30 @@ ul {
     display: block;
     width: 100%;
     max-height: 950px;
-    background: url(../images/watercolor_bg_life.png) no-repeat center center, url(../images/watch.png) no-repeat right 82%;
+    background: url(../images/watercolor_bg_life@1x.webp) no-repeat center center, url(../images/watch@1x.webp) no-repeat right 82%;
     border-top: .1px solid transparent;
     margin-top: 113px;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .life__main {
+        background: url(../images/watercolor_bg_life@2x.webp) no-repeat center center, url(../images/watch@2x.webp) no-repeat right 82%;
+    }
+}
+.no-webp .life__main {
+    background: url(../images/watercolor_bg_life@1x.png) no-repeat center center, url(../images/watch@1x.png) no-repeat right 82%;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .no-webp .life__main {
+        background: url(../images/watercolor_bg_life@2x.png) no-repeat center center, url(../images/watch@2x.png) no-repeat right 82%;
+    }
 }
 .content__life {
     width: 100%;
@@ -943,7 +1104,7 @@ ul {
     position: relative;
     margin: 11px 7px;
 }
-.foto__life > img {
+.foto__life picture img {
     width: 100%;
     height: auto;
 }
@@ -1027,9 +1188,33 @@ ul {
     display: block;
     width: 100%;
     margin-top: 148px;
-    background: url(../images/maisrael.png) no-repeat center top;
+    background: url(../images/maisrael@1x.webp) no-repeat center top;
     background-size: cover;
     border: .1px solid transparent;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .masa__main {
+        background: url(../images/maisrael@2x.webp) no-repeat center top;
+        background-size: cover;
+    }
+}
+.no-webp .masa__main {
+    background: url(../images/maisrael@1x.png) no-repeat center top;
+    background-size: cover;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .no-webp .masa__main {
+        background: url(../images/maisrael@2x.png) no-repeat center top;
+        background-size: cover;
+    }
 }
 .conteiner__masa {
     height: 42.7vw;
@@ -1101,9 +1286,33 @@ ul {
     width: 100%;
     min-height: 940px;
     margin-top: 62px;
-    background: url(../images/questions.png) no-repeat 100% calc(415px - 25vw), url(../images/watercolor_bg_questions.png) no-repeat 50% 0, url(../images/bag.png) no-repeat 0 100%;
+    background: url(../images/questions@1x.webp) no-repeat 100% calc(415px - 25vw), url(../images/watercolor_bg_questions@1x.webp) no-repeat 50% 0, url(../images/bag@1x.webp) no-repeat 0 100%;
     background-size: 47% auto,auto,auto;
-     border: .1px solid transparent;
+    border: .1px solid transparent;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .questions__main {
+        background: url(../images/questions@2x.webp) no-repeat 100% calc(415px - 25vw), url(../images/watercolor_bg_questions@2x.webp) no-repeat 50% 0, url(../images/bag@2x.webp) no-repeat 0 100%;
+        background-size: 47% auto,auto,auto;
+    }
+}
+.no-webp .questions__main {
+    background: url(../images/questions@1x.png) no-repeat 100% calc(415px - 25vw), url(../images/watercolor_bg_questions@1x.png) no-repeat 50% 0, url(../images/bag@1x.png) no-repeat 0 100%;
+    background-size: 47% auto,auto,auto;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .no-webp .questions__main {
+        background: url(../images/questions@2x.png) no-repeat 100% calc(415px - 25vw), url(../images/watercolor_bg_questions@2x.png) no-repeat 50% 0, url(../images/bag@2x.png) no-repeat 0 100%;
+    background-size: 47% auto,auto,auto;
+    }
 }
 .content__questions {
     width: 50%;
@@ -1252,7 +1461,28 @@ ul {
 .testimonials__main {
     border-top: .1px solid transparent;
     margin-top: 26px;
-    background: url(../images/sketch.png) no-repeat right 35%, url(../images/watercolor_bg_testimonial.png) no-repeat right 50%;
+    background: url(../images/sketch@1x.webp) no-repeat right 35%, url(../images/watercolor_bg_testimonial@1x.webp) no-repeat right 50%;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .testimonials__main {
+        background: url(../images/sketch@2x.webp) no-repeat right 35%, url(../images/watercolor_bg_testimonial@2x.webp) no-repeat right 50%;
+    }
+}
+.no-webp .testimonials__main {
+    background: url(../images/sketch@1x.png) no-repeat right 35%, url(../images/watercolor_bg_testimonial@1x.png) no-repeat right 50%;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .no-webp .testimonials__main {
+        background: url(../images/sketch@2x.png) no-repeat right 35%, url(../images/watercolor_bg_testimonial@2x.png) no-repeat right 50%;
+    }
 }
 .content__testimonials h2 {
     text-align: center;
@@ -1385,113 +1615,7 @@ ul {
     color: #484848;
     opacity: 0.5;
 }  
-/*
-.navigation__reviews {
-    position: absolute;
-    width: 96px;
-    height: 26px;
-    left: 40.5%;
-    bottom: -2px;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.pagination__reviews p {
-    font-family: 'fira-sans', "arial", sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 25px;
-    color: #484848;
-    opacity: 0.5;
-}
-.pagination__reviews p:before, .pagination__reviews p:after {
-    content: "";
-    font-family: 'fira-sans', "arial", sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 25px;
-    color: #484848;
-    opacity: 0.5;
-}
-.pagination__reviews p:after {
-    content: "6";
-    margin-left: 5px;
-}
-.pagination__reviews p:before {
-    margin-right: 5px;
-}
-.controls__reviews {
-    position: relative;
-    width: 35px;
-    height: 100%;
-}
-#slider__testimonials_switcher_1:checked ~ .navigation__reviews .controls__reviews .control__review_2, 
-#slider__testimonials_switcher_2:checked ~ .navigation__reviews .controls__reviews .control__review_3, 
-#slider__testimonials_switcher_3:checked ~ .navigation__reviews .controls__reviews .control__review_4, 
-#slider__testimonials_switcher_4:checked ~ .navigation__reviews .controls__reviews .control__review_5, 
-#slider__testimonials_switcher_5:checked ~ .navigation__reviews .controls__reviews .control__review_6, 
-#slider__testimonials_switcher_6:checked ~ .navigation__reviews .controls__reviews .control__review_1 {
-    background: url(../images/angle-right-left.svg) no-repeat center left;
-    transform: translateY(-50%) rotate(180deg);
-    display: inline-block;
-    position: absolute;
-    width: 11px;
-    height: 18px;
-    left: 0;
-    top: 50%;
-} 
-#slider__testimonials_switcher_1:checked ~ .navigation__reviews .controls__reviews .control__review_6, 
-#slider__testimonials_switcher_2:checked ~ .navigation__reviews .controls__reviews .control__review_1, 
-#slider__testimonials_switcher_3:checked ~ .navigation__reviews .controls__reviews .control__review_2, 
-#slider__testimonials_switcher_4:checked ~ .navigation__reviews .controls__reviews .control__review_3, 
-#slider__testimonials_switcher_5:checked ~ .navigation__reviews .controls__reviews .control__review_4, 
-#slider__testimonials_switcher_6:checked ~ .navigation__reviews .controls__reviews .control__review_5 {
-    background: url(../images/angle-right-left.svg) no-repeat center right;
-    display: inline-block;
-    position: absolute;
-    width: 11px;
-    height: 18px;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-#slider__testimonials_switcher_1:checked ~ .reviews__testimonials {
-    margin-left: 0;
-}
-#slider__testimonials_switcher_2:checked ~ .reviews__testimonials {
-    margin-left: -1084px;
-}
-#slider__testimonials_switcher_3:checked ~ .reviews__testimonials {
-    margin-left: -2168px;
-}
-#slider__testimonials_switcher_4:checked ~ .reviews__testimonials {
-    margin-left: -3252px;
-}
-#slider__testimonials_switcher_5:checked ~ .reviews__testimonials {
-    margin-left: -4336px;
-}
-#slider__testimonials_switcher_6:checked ~ .reviews__testimonials {
-    margin-left: -5420px;
-}
-#slider__testimonials_switcher_1:checked ~ .navigation__reviews .pagination__reviews p:before {
-    content: "1";
-}
-#slider__testimonials_switcher_2:checked ~ .navigation__reviews .pagination__reviews p:before {
-    content: "2";
-}
-#slider__testimonials_switcher_3:checked ~ .navigation__reviews .pagination__reviews p:before {
-    content: "3";
-}
-#slider__testimonials_switcher_4:checked ~ .navigation__reviews .pagination__reviews p:before {
-    content: "4";
-}
-#slider__testimonials_switcher_5:checked ~ .navigation__reviews .pagination__reviews p:before {
-    content: "5";
-}
-#slider__testimonials_switcher_6:checked ~ .navigation__reviews .pagination__reviews p:before {
-    content: "6";
-}  */
+
 
 
 /* CONTACTS */
@@ -1500,7 +1624,28 @@ ul {
     position: relative;
     width: 100%;
     margin-top: 109px;
-    background: url(../images/watercolor_bg-contacts.png) no-repeat center center;
+    background: url(../images/watercolor_bg-contacts@1x.webp) no-repeat center center;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .contacts__main {
+        background: url(../images/watercolor_bg-contacts@2x.webp) no-repeat center center;
+    }
+}
+.no-webp .contacts__main {
+    background: url(../images/watercolor_bg-contacts@1x.png) no-repeat center center;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .no-webp .contacts__main {
+        background: url(../images/watercolor_bg-contacts@2x.png) no-repeat center center;
+    }
 }
 .map__cotacts {
     position: absolute;
@@ -2093,6 +2238,10 @@ ul {
         margin: 0 5px;
         order: initial;
     }
+    .foto__life picture img {
+        width: 100%;
+        height: 100%;
+    }
     .foto__life:first-child {
         margin-left: 0;
     }
@@ -2391,8 +2540,35 @@ ul {
 
 @media (max-width: 320px) {
     .masa__main {
-        background: url(../images/maisrael-phone.png) no-repeat;
+        background: url(../images/maisrael-phone@1x.webp) no-repeat;
         background-position: 50% 50%;
         background-size: auto;
     }
+    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .masa__main {
+        background: url(../images/maisrael-phone@2x.webp) no-repeat;
+        background-position: 50% 50%;
+        background-size: auto;
+    }
+}
+    .no-webp .masa__main {
+        background: url(../images/maisrael-phone@1x.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: auto;
+    }
+    @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .no-webp .masa__main {
+        background: url(../images/maisrael-phone@2x.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: auto;
+    }
+}
 }
