@@ -304,7 +304,7 @@ ul {
 
 }
 .form__bell_consent input:checked+span {
-    background: url(../images/angle-down.svg) no-repeat center center;
+    background: url(../sprite.svg#angle-down) no-repeat center center;
 }
 .md-effect-10 .md-close {
     display: inline-block;
@@ -683,54 +683,54 @@ only screen and (min-resolution: 144dpi) {
     height: 33px;
     padding-right: 21px;
     margin-left: 24px;
-    background: url(../images/star-black.svg) no-repeat;
+    background: url(../sprite.svg#star-black) no-repeat;
 }
 .text__label_1:hover:before, .text__label_1:focus:before {
-    background: url(../images/star-yellow.svg) no-repeat;
+    background: url(../sprite.svg#star-yellow) no-repeat;
 }
 .text__label_2:before {
     width: 36px;
     height: 35px;
     padding-right: 16px;
     margin-left: 20px;
-    background: url(../images/cap-black.svg) no-repeat;
+    background: url(../sprite.svg#cap-black) no-repeat;
 }
 .text__label_2:hover:before, .text__label_2:focus:before {
-    background: url(../images/cap-yellow.svg) no-repeat;
+    background: url(../sprite.svg#cap-yellow) no-repeat;
 }
 .text__label_3:before {
     width: 32px;
     height: 35px;
     padding-right: 18px;
     margin-left: 22px;
-    background: url(../images/portfolio-black.svg) no-repeat;
+    background: url(../sprite.svg#portfolio-black) no-repeat;
 }
 .text__label_3:hover:before, .text__label_3:focus:before {
-    background: url(../images/portfolio-yellow.svg) no-repeat;
+    background: url(../sprite.svg#portfolio-yellow) no-repeat;
 }
 .text__label_4:before {
     width: 32px;
     height: 29px;
     padding-right: 18px;
     margin-left: 22px;
-    background: url(../images/arm-black.svg) no-repeat;
+    background: url(../sprite.svg#arm-black) no-repeat;
 }
 .text__label_4:hover:before, .text__label_4:focus:before {
-    background: url(../images/arm-yellow.svg) no-repeat;
+    background: url(../sprite.svg#arm-yellow) no-repeat;
 }
 .text__label_5:before {
     width: 23px;
     height: 25px;
     padding-right: 23px;
     margin-left: 26px;
-    background: url(../images/menorah-black.svg) no-repeat;
+    background: url(../sprite.svg#menorah-black) no-repeat;
 }
 .text__label_5:hover:before, .text__label_5:focus:before {
-    background: url(../images/menorah-yellow.svg) no-repeat;
+    background: url(../sprite.svg#menorah-yellow) no-repeat;
 }
 
 #general:checked ~ .selector__programs .text__label_1:before {
-     background: url(../images/star-white.svg) no-repeat;
+     background: url(../sprite.svg#star-white) no-repeat;
 
 }
 #general:checked ~ .selector__programs .text__label_1 {
@@ -746,7 +746,7 @@ only screen and (min-resolution: 144dpi) {
     opacity: 1;
 }
 #academic:checked ~ .selector__programs .text__label_2:before {
-     background: url(../images/cap-white.svg) no-repeat;
+     background: url(../sprite.svg#cap-white) no-repeat;
 }
 #academic:checked ~ .selector__programs .text__label_2 {
     background: -o-linear-gradient(341.58deg, #FFC341 20.46%, #FFD701 65.31%);
@@ -761,7 +761,7 @@ only screen and (min-resolution: 144dpi) {
     opacity: 1;
 }
 #internships:checked ~ .selector__programs .text__label_3:before {
-     background: url(../images/portfolio-white.svg) no-repeat;
+     background: url(../sprite.svg#portfolio-white) no-repeat;
 }
 #internships:checked ~ .selector__programs .text__label_3 {
     background: -o-linear-gradient(341.58deg, #FFC341 20.46%, #FFD701 65.31%);
@@ -776,7 +776,7 @@ only screen and (min-resolution: 144dpi) {
     opacity: 1;
 }
 #volunteering:checked ~ .selector__programs .text__label_4:before {
-     background: url(../images/arm-white.svg) no-repeat;
+     background: url(../sprite.svg#arm-white) no-repeat;
 }
 #volunteering:checked ~ .selector__programs .text__label_4 {
     background: -o-linear-gradient(341.58deg, #FFC341 20.46%, #FFD701 65.31%);
@@ -791,7 +791,7 @@ only screen and (min-resolution: 144dpi) {
     opacity: 1;
 }
 #religious:checked ~ .selector__programs .text__label_5:before {
-     background: url(../images/menorah-white.svg) no-repeat;
+     background: url(../sprite.svg#menorah-white) no-repeat;
 }
 #religious:checked ~ .selector__programs .text__label_5 {
     background: -o-linear-gradient(341.58deg, #FFC341 20.46%, #FFD701 65.31%);
@@ -1388,7 +1388,7 @@ only screen and (min-resolution: 144dpi) {
     height: 11px;
     position: absolute;
     display: inline-block;
-    background-image: url(../sprite.svg#angle-down);
+    background: url(../sprite.svg#angle-down);
     background-size: 17px 11px;
     right: 8%;
     top: 50px;
@@ -1413,7 +1413,8 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0;
 }
 #spoiler1:checked ~ .heading__question:after {
-    background: url(../images/angle-up.svg) no-repeat;
+    background: url(../sprite.svg#angle-up);
+    background-size: 17px 11px;
 }
 #spoiler2:checked ~ p {
     display: block;
@@ -1422,7 +1423,8 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0;
 }
 #spoiler2:checked ~ .heading__question:after {
-    background: url(../images/angle-up.svg) no-repeat;
+    background: url(../sprite.svg#angle-up);
+    background-size: 17px 11px;
 }
 #spoiler3:checked ~ p {
     display: block;
@@ -1431,7 +1433,8 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0;
 }
 #spoiler3:checked ~ .heading__question:after {
-    background: url(../images/angle-up.svg) no-repeat;
+    background: url(../sprite.svg#angle-up);
+    background-size: 17px 11px;
 }
 #spoiler4:checked ~ p {
     display: block;
@@ -1440,7 +1443,8 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0;
 }
 #spoiler4:checked ~ .heading__question:after {
-    background: url(../images/angle-up.svg) no-repeat;
+    background: url(../sprite.svg#angle-up);
+    background-size: 17px 11px;
 }
 #spoiler5:checked ~ p {
     display: block;
@@ -1449,7 +1453,8 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0;
 }
 #spoiler5:checked ~ .heading__question:after {
-    background: url(../images/angle-up.svg) no-repeat;
+    background: url(../sprite.svg#angle-up);
+    background-size: 17px 11px;
 }
 #spoiler6:checked ~ p {
     display: block;
@@ -1458,7 +1463,8 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0;
 }
 #spoiler6:checked ~ .heading__question:after {
-    background: url(../images/angle-up.svg) no-repeat;
+    background: url(../sprite.svg#angle-up);
+    background-size: 17px 11px;
 }
 
 
@@ -1596,7 +1602,7 @@ only screen and (min-resolution: 144dpi) {
     height: 15px;
     margin-right: 5px;
     transform: rotate(180deg);
-    background: url(../images/angle-right-left.svg) no-repeat center center;
+    background: url(../sprite.svg#angle) no-repeat center center;
     vertical-align: middle;
 }
 .owl-carousel .owl-nav .owl-next span {
@@ -1604,7 +1610,7 @@ only screen and (min-resolution: 144dpi) {
     width: 8px;
     height: 15px;
     margin-left: 5px;
-    background: url(../images/angle-right-left.svg) no-repeat center center;
+    background: url(../sprite.svg#angle) no-repeat center center;
     vertical-align: middle;
 }
 .owl-carousel .owl-nav button {
@@ -1702,7 +1708,7 @@ only screen and (min-resolution: 144dpi) {
     width: 12px;
     height: 18px;
     display: inline-block;
-    background: url(../images/marker.svg) no-repeat;
+    background: url(../sprite.svg#marker) no-repeat;
     margin-right: 6px;
     vertical-align: middle;
 }
@@ -1711,7 +1717,8 @@ only screen and (min-resolution: 144dpi) {
     width: 16px;
     height: 15px;
     display: inline-block;
-    background: url(../images/arrow.svg) no-repeat;
+    background: url(../sprite.svg#arrow);
+    background-size: 16px 15px;
     margin-left: 9px;
     vertical-align: middle;
 }
