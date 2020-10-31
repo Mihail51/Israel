@@ -94,10 +94,10 @@
 				<picture class="photo photo__about_inner">
 					<!-- 1x: 870px; 2x: 1740px -->
 					<!-- small 1x: 320px; 2x: 640px -->
-					<source media="(max-width: 1366px)" srcset="images/photo@1x.webp 1x, images/photo@2x.webp 2x" type="image/webp">
+					<source media="(max-width: 320px)" srcset="images/photo-small@1x.png 1x, images/photo-small@2x.png 2x" type="image/png">
 					<source media="(max-width: 320px)" srcset="images/photo-small@1x.webp 1x, images/photo-small@2x.webp 2x" type="image/webp">
-					<img class="photo__about" width="870" height="460" srcset="images/photo@2x.png" src="images/photo@1x.png" alt="Надпись Израиль с изображением внутри">
-					<img class="photo__about_small" width="320" height="224" srcset="images/photo-small@2x.png" src="images/photo-small@1x.png" alt="Надпись Израиль с изображением внутри">
+					<source srcset="images/photo@1x.webp 1x, images/photo@2x.webp 2x" type="image/webp">
+					<img class="photo__about" width="870" height="460" src="images/photo@1x.png" srcset="images/photo@2x.png 2x" alt="Надпись Израиль с изображением внутри">
 				</picture>  
 				<svg class="play-button" height="96" width="96"><use xlink:href="/sprite-inline.svg.#play-button"></use></svg>
 			</div>
@@ -205,10 +205,10 @@
 							<picture>
 								<!-- 1х: 482px; 2x: 964px -->
 								<!-- phone 1х: 288px; 2x: 576px -->
-								<source type="image/webp" srcset="images/life-img-1-phone@1x.webp 1x, images/life-img-1-phone@2x.webp 2x" media="(max-width: 320px) ">
-								<source type="image/webp" srcset="images/life-img-1@1x.webp 1x, images/life-img-1@2x.webp 2x" media="(max-width: 1366px) ">
-								<img width="482" height="732" src="images/life-img-1@1x.png" srcset="images/life-img-1@1x.png 1x, images/life-img-1@1x.png 2x" alt="Фотография мечети" class="foto__life_desctop">
-								<img width="288" height="400" src="images/life-img-1-phone@1x.png" srcset="images/life-img-1-phone@1x.png 1x, images/life-img-1-phone@2x.png 2x" alt="Фотография мечети" class="foto__life_phone">
+								<source media="(max-width: 320px)" srcset="images/life-img-1-phone@1x.png 1x, images/life-img-1-phone@2x.png 2x" type="image/png">
+								<source media="(max-width: 320px)" srcset="images/life-img-1-phone@1x.webp 1x, images/life-img-1-phone@2x.webp 2x" type="image/webp">
+								<source srcset="images/life-img-1@1x.webp 1x, images/life-img-1@2x.webp 2x" type="image/webp">
+								<img width="482" height="732" src="images/life-img-1@1x.png" srcset="images/life-img-1@2x.png 2x" alt="Фотография мечети" class="foto__life_desctop">
 							</picture>
 							<figcaption class="description description__life">
 								<h4>Экскурсии по Израилю  и&nbsp;знакомство с его историей</h4>
@@ -218,10 +218,11 @@
 							<picture>
 								<!-- 1х: 211px; 2x: 422px -->
 								<!-- phone 1х: 288px; 2x: 576px -->
-								<source type="image/webp" srcset="images/life-img-2-phone@1x.webp 1x, images/life-img-2-phone@2x.webp 2x" media="(max-width: 320px) ">
-								<source type="image/webp" srcset="images/life-img-2@1x.webp 1x, images/life-img-2@2x.webp 2x" media="(max-width: 1366px) ">
-								<img width="211" height="318" src="images/life-img-2@1x.png" srcset="images/life-img-2@1x.png 1x, images/life-img-2@1x.png 2x" alt="Парень изучает иврит" class="foto__life_desctop">
-								<img width="288" height="400" src="images/life-img-2-phone@1x.png" srcset="images/life-img-2-phone@1x.png 1x, images/life-img-2-phone@2x.png 2x" alt="Парень изучает иврит" class="foto__life_phone">
+								<source media="(max-width: 320px)" srcset="images/life-img-2-phone@1x.png 1x, images/life-img-2-phone@2x.png 2x" type="image/png">
+								<source media="(max-width: 320px)" srcset="images/life-img-2-phone@1x.webp 1x, images/life-img-2-phone@2x.webp 2x" type="image/webp">
+								<source srcset="images/life-img-2@1x.webp 1x, images/life-img-2@2x.webp 2x" type="image/webp">
+								<img width="211" height="318" src="images/life-img-2@1x.png" srcset="images/life-img-2@1x.png 2x" alt="Парень изучает иврит" class="foto__life_desctop">
+								
 							</picture>
 							<figcaption class="description description__life">
 								<h4>Изучение иврита</h4>
@@ -231,10 +232,10 @@
 							<picture>
 								<!-- 1х: 411px; 2x: 822px -->
 								<!-- phone 1х: 288px; 2x: 576px -->
-								<source type="image/webp" srcset="images/life-img-3-phone@1x.webp 1x, images/life-img-3-phone@2x.webp 2x" media="(max-width: 320px) ">
-								<source type="image/webp" srcset="images/life-img-3@1x.webp 1x, images/life-img-3@2x.webp 2x" media="(max-width: 1366px) ">
-								<img width="411" height="318" src="images/life-img-3@1x.png" srcset="images/life-img-3@1x.png 1x, images/life-img-3@1x.png 2x" alt="Один молодой человек обучает другого" class="foto__life_desctop">
-								<img width="288" height="400" src="images/life-img-3-phone@1x.png" srcset="images/life-img-3-phone@1x.png 1x, images/life-img-3-phone@2x.png 2x" alt="Один молодой человек обучает другого" class="foto__life_phone">
+								<source media="(max-width: 320px)" srcset="images/life-img-3-phone@1x.png 1x, images/life-img-3-phone@2x.png 2x" type="image/png">
+								<source media="(max-width: 320px)" srcset="images/life-img-3-phone@1x.webp 1x, images/life-img-3-phone@2x.webp 2x" type="image/webp">
+								<source srcset="images/life-img-3@1x.webp 1x, images/life-img-3@2x.webp 2x" type="image/webp">
+								<img width="411" height="318" src="images/life-img-3@1x.png" srcset="images/life-img-3@2x.png 2x" alt="Один молодой человек обучает другого" class="foto__life_desctop">
 							</picture>
 							<figcaption class="description description__life">
 								<h4>Обучение современным навыкам и профессиям</h4>
@@ -244,10 +245,10 @@
 							<picture>
 								<!-- 1х: 411px; 2x: 822px -->
 								<!-- phone 1х: 288px; 2x: 576px -->
-								<source type="image/webp" srcset="images/life-img-4-phone@1x.webp 1x, images/life-img-4-phone@2x.webp 2x" media="(max-width: 320px) ">
-								<source type="image/webp" srcset="images/life-img-4@1x.webp 1x, images/life-img-4@2x.webp 2x" media="(max-width: 1366px) ">
-								<img width="411" height="318" src="images/life-img-4@1x.png" srcset="images/life-img-4@1x.png 1x, images/life-img-4@1x.png 2x" alt="Трое молоды людей смеются" class="foto__life_desctop">
-								<img width="288" height="400" src="images/life-img-4-phone@1x.png" srcset="images/life-img-4-phone@1x.png 1x, images/life-img-4-phone@2x.png 2x" alt="Трое молоды людей смеются" class="foto__life_phone">
+								<source media="(max-width: 320px)" srcset="images/life-img-4-phone@1x.png 1x, images/life-img-4-phone@2x.png 2x" type="image/png">
+								<source media="(max-width: 320px)" srcset="images/life-img-4-phone@1x.webp 1x, images/life-img-4-phone@2x.webp 2x" type="image/webp">
+								<source srcset="images/life-img-4@1x.webp 1x, images/life-img-4@2x.webp 2x" type="image/webp">
+								<img width="411" height="318" src="images/life-img-4@1x.png" srcset="images/life-img-4@2x.png 2x" alt="Трое молоды людей смеются" class="foto__life_desctop">
 							</picture>
 							<figcaption class="description description__life">
 								<h4>Совместные творческие проекты с израильской молодёжью</h4>
@@ -257,10 +258,10 @@
 							<picture>
 								<!-- 1х: 214px; 2x: 428px -->
 								<!-- phone 1х: 288px; 2x: 576px -->
-								<source type="image/webp" srcset="images/life-img-5-phone@1x.webp 1x, images/life-img-5-phone@2x.webp 2x" media="(max-width: 320px) ">
-								<source type="image/webp" srcset="images/life-img-5@1x.webp 1x, images/life-img-5@2x.webp 2x" media="(max-width: 1366px) ">
-								<img width="214" height="318" src="images/life-img-5@1x.png" srcset="images/life-img-5@1x.png 1x, images/life-img-5@1x.png 2x" alt="Парень на вершине горы горы в лучах заката" class="foto__life_desctop">
-								<img width="288" height="400" src="images/life-img-5-phone@1x.png" srcset="images/life-img-5-phone@1x.png 1x, images/life-img-5-phone@2x.png 2x" alt="Парень на вершине горы горы в лучах заката" class="foto__life_phone">
+								<source media="(max-width: 320px)" srcset="images/life-img-5-phone@1x.png 1x, images/life-img-5-phone@2x.png 2x" type="image/png">
+								<source media="(max-width: 320px)" srcset="images/life-img-5-phone@1x.webp 1x, images/life-img-5-phone@2x.webp 2x" type="image/webp">
+								<source srcset="images/life-img-5@1x.webp 1x, images/life-img-5@2x.webp 2x" type="image/webp">
+								<img width="214" height="318" src="images/life-img-5@1x.png" srcset="images/life-img-5@2x.png 2x" alt="Парень на вершине горы горы в лучах заката" class="foto__life_desctop">
 							</picture>
 							<figcaption class="description description__life">
 								<h4>Развитие  лидерства</h4>
