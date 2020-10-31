@@ -315,7 +315,7 @@ ul {
     right: 32px;
     vertical-align: middle;
 }
-#close {
+.md-close .close {
     fill: #FFC341;
 }
 #close:active {
@@ -1272,6 +1272,9 @@ only screen and (min-resolution: 144dpi) {
     background: -o-linear-gradient(341.58deg, #FFC341 20.46%, #FFD701 65.31%);
     background: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%);   
 }
+.instagram-white {
+    fill: white;
+}
 .btn__masa img {
     margin-right: 10px;
 }
@@ -1413,8 +1416,8 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0;
 }
 #spoiler1:checked ~ .heading__question:after {
-    background: url(../sprite.svg#angle-up);
-    background-size: 17px 11px;
+    transform: rotate(180deg);
+    top: 44.5px;
 }
 #spoiler2:checked ~ p {
     display: block;
@@ -1423,8 +1426,8 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0;
 }
 #spoiler2:checked ~ .heading__question:after {
-    background: url(../sprite.svg#angle-up);
-    background-size: 17px 11px;
+    transform: rotate(180deg);
+    top: 44.5px;
 }
 #spoiler3:checked ~ p {
     display: block;
@@ -1433,8 +1436,8 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0;
 }
 #spoiler3:checked ~ .heading__question:after {
-    background: url(../sprite.svg#angle-up);
-    background-size: 17px 11px;
+    transform: rotate(180deg);
+    top: 44.5px;
 }
 #spoiler4:checked ~ p {
     display: block;
@@ -1443,8 +1446,8 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0;
 }
 #spoiler4:checked ~ .heading__question:after {
-    background: url(../sprite.svg#angle-up);
-    background-size: 17px 11px;
+    transform: rotate(180deg);
+    top: 44.5px;
 }
 #spoiler5:checked ~ p {
     display: block;
@@ -1453,8 +1456,8 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0;
 }
 #spoiler5:checked ~ .heading__question:after {
-    background: url(../sprite.svg#angle-up);
-    background-size: 17px 11px;
+    transform: rotate(180deg);
+    top: 44.5px;
 }
 #spoiler6:checked ~ p {
     display: block;
@@ -1463,8 +1466,8 @@ only screen and (min-resolution: 144dpi) {
     margin-bottom: 0;
 }
 #spoiler6:checked ~ .heading__question:after {
-    background: url(../sprite.svg#angle-up);
-    background-size: 17px 11px;
+    transform: rotate(180deg);
+    top: 44.5px;
 }
 
 
@@ -1525,7 +1528,7 @@ only screen and (min-resolution: 144dpi) {
     height: 480px;
     margin-left: -13px;
 }
-.owl-carousel .owl-item img {
+.owl-carousel .owl-item > img {
     height: auto;
 }
 .content__review {
@@ -1576,14 +1579,18 @@ only screen and (min-resolution: 144dpi) {
     justify-content: space-between;
     align-items: center;
 }
+.social .instagram {
+    fill: black;
+    opacity: 0.16;
+}
 .social__review {
     position: absolute;
     bottom: -80px;
     right: 0;
 }
-.social img {
+/*.social img {
     opacity: 0.1;
-}
+}*/
 .owl-carousel .owl-nav.disabled {
     display: inline-block!important;
     position: absolute;
